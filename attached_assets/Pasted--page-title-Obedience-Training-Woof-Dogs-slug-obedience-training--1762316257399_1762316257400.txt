@@ -1,0 +1,270 @@
+{
+  "page": {
+    "title": "Obedience Training — Woof Dogs",
+    "slug": "obedience-training",
+    "sections": [
+      {
+        "id": "hero",
+        "headline": "Obedience Training that works in the real world",
+        "subheadline": "From basics to advanced off-leash reliability — every program starts with a professional evaluation.",
+        "locationTag": "Serving Boca Raton, Delray Beach, Boynton & nearby South Florida",
+        "primaryCta": { "label": "Book Evaluation", "href": "#book" },
+        "secondaryCta": { "label": "Compare Levels", "href": "#program-levels" },
+        "image": { "src": "/images/obedience-hero.jpg", "alt": "Professional dog obedience training outdoors" }
+      },
+      {
+        "id": "overview",
+        "label": "Program Overview",
+        "title": "Personalized Obedience Training for Every Dog",
+        "paragraphs": [
+          "Our Obedience Training builds clear communication, confidence, and calm behavior at home and in public. Whether you’re starting foundations or aiming for off-leash freedom, our structured approach delivers lasting results.",
+          "Every dog begins with a professional behavioral evaluation. We assess temperament, motivation, and current skills, then design a plan that fits your lifestyle and your dog’s unique learning style."
+        ],
+        "modalities": [
+          {
+            "name": "In-Home Training",
+            "icon": "Home",
+            "description": "Private, one-on-one coaching in your dog’s everyday environment — ideal for household routines and family involvement."
+          },
+          {
+            "name": "Bootcamp (Board & Train)",
+            "icon": "Tent",
+            "description": "An intensive stay with our trainers for accelerated learning and full-time reinforcement — perfect for faster, consistent results."
+          }
+        ],
+        "note": "Both formats use balanced, reward-focused methods grounded in learning science."
+      },
+      {
+        "id": "behavior-problems",
+        "label": "What We Address",
+        "title": "Common Obedience Challenges We Solve",
+        "items": [
+          "Leash pulling and lunging",
+          "Jumping on people and guests",
+          "Ignoring commands / selective listening",
+          "Excessive barking",
+          "Counter-surfing and door dashing",
+          "Poor recall and off-leash control",
+          "Over-excitability and impulse control",
+          "Settle/place and calm behavior at home"
+        ]
+      },
+      {
+        "id": "trust",
+        "title": "Why Choose Us",
+        "badges": [
+          { "label": "25+ Years", "description": "Professional training experience" },
+          { "label": "1,000+ Dogs", "description": "Successful graduates" },
+          { "label": "Balanced", "description": "Evidence-based methods" },
+          { "label": "Family-Ready", "description": "Kid & home friendly" }
+        ]
+      },
+      {
+        "id": "philosophy",
+        "label": "Training Philosophy",
+        "title": "Humane, Clear, and Consistent",
+        "pillars": [
+          {
+            "icon": "Heart",
+            "title": "Reward-Focused",
+            "description": "We reinforce desired choices to build confidence and motivation."
+          },
+          {
+            "icon": "Scale",
+            "title": "Balanced Structure",
+            "description": "Clear boundaries and fair feedback so dogs understand expectations."
+          },
+          {
+            "icon": "BookOpen",
+            "title": "Science-Based",
+            "description": "Methods grounded in learning theory and real-world proofing."
+          },
+          {
+            "icon": "Users",
+            "title": "Owner Coaching",
+            "description": "We teach you the skills to maintain results long after sessions end."
+          }
+        ]
+      },
+      {
+        "id": "program-levels",
+        "label": "Programs",
+        "title": "Obedience Levels",
+        "subtitle": "Choose the right level for your dog. Not sure? Start with an evaluation.",
+        "levels": [
+          {
+            "icon": "ClipboardList",
+            "title": "Basic Obedience",
+            "description": "Sit, down, stay, leash manners, place, and recall foundation.",
+            "meta": "Great for puppies & first-time learners",
+            "cta": { "label": "Book Evaluation", "href": "#book" }
+          },
+          {
+            "icon": "Star",
+            "title": "Advanced Obedience",
+            "description": "Distraction proofing, duration/distance, and public manners.",
+            "meta": "For dogs with basics that need reliability",
+            "cta": { "label": "Book Evaluation", "href": "#book" }
+          },
+          {
+            "icon": "Target",
+            "title": "Off-Leash Reliability",
+            "description": "Solid recall & control with freedom in real-world settings.",
+            "meta": "For advanced teams ready for freedom",
+            "cta": { "label": "Book Evaluation", "href": "#book" }
+          }
+        ]
+      },
+      {
+        "id": "how-it-works",
+        "label": "Process",
+        "title": "How It Works",
+        "steps": [
+          {
+            "icon": "ClipboardList",
+            "title": "1) Evaluation",
+            "description": "Professional behavioral assessment to map goals and challenges."
+          },
+          {
+            "icon": "FileText",
+            "title": "2) Custom Plan",
+            "description": "Level selection, sessions, homework, and milestones tailored to your dog."
+          },
+          {
+            "icon": "RotateCcw",
+            "title": "3) Reinforcement",
+            "description": "Owner coaching, follow-ups, and real-world proofing for lasting results."
+          }
+        ],
+        "note": "Your trainer recommends the optimal format (In-Home or Bootcamp) after the evaluation."
+      },
+      {
+        "id": "trainers",
+        "label": "Our Trainers",
+        "title": "Certified Professionals, Real-World Expertise",
+        "intro": "Meet the team dedicated to helping dogs and owners thrive together.",
+        "people": [
+          {
+            "name": "Shai Meimony",
+            "role": "Lead Trainer • Aggression & Obedience Specialist",
+            "credentials": ["25+ years experience", "Behavior modification specialist", "Balanced methods"],
+            "image": "/images/trainers/shai.jpg",
+            "icon": "Award"
+          },
+          {
+            "name": "Alex Johnson",
+            "role": "Senior Trainer • Obedience & Off-Leash",
+            "credentials": ["AKC CGC prep", "Public manners & proofing", "Owner coaching"],
+            "image": "/images/trainers/alex.jpg",
+            "icon": "Award"
+          },
+          {
+            "name": "Sarah Lee",
+            "role": "Puppy Foundations & Family Coaching",
+            "credentials": ["Puppy socialization", "Crate & potty routines", "Kid-safe handling"],
+            "image": "/images/trainers/sarah.jpg",
+            "icon": "Award"
+          }
+        ]
+      },
+      {
+        "id": "results",
+        "label": "Results",
+        "title": "Real Transformations",
+        "description": "Before & after success stories from our graduates.",
+        "examples": [
+          { "title": "From Pulling to Polite Walking", "subtitle": "Leash control achieved in 4 weeks", "image": "/images/results-leash.jpg" },
+          { "title": "Reliable Recall", "subtitle": "Off-leash freedom with full control", "image": "/images/results-recall.jpg" },
+          { "title": "Calmer at Home", "subtitle": "No more jumping or counter-surfing", "image": "/images/results-calm.jpg" }
+        ]
+      },
+      {
+        "id": "testimonials",
+        "label": "Testimonials",
+        "title": "Happy walks. Calm homes.",
+        "description": "Hear from families who completed our obedience programs.",
+        "quotes": [
+          {
+            "quote": "We started with leash-pulling chaos. After training, walks are calm and enjoyable — it’s night and day!",
+            "author": "Sarah Mitchell",
+            "dog": "Luna, Golden Retriever"
+          },
+          {
+            "quote": "Our trainer customized every session for our anxious dog. Now she’s confident and obedient even in public.",
+            "author": "Michael Chen",
+            "dog": "Bella, Shepherd Mix"
+          },
+          {
+            "quote": "Best decision for our family — consistent results and clearer communication with our dog.",
+            "author": "Jessica Rodriguez",
+            "dog": "Max, Labrador"
+          }
+        ]
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "q": "How old should my dog be to start obedience training?",
+            "a": "We begin foundations as early as 10–12 weeks with age-appropriate sessions. Adult dogs can start at any time."
+          },
+          {
+            "q": "Do you use e-collars or prongs?",
+            "a": "We use a balanced, reward-focused approach. Tools are introduced only when appropriate, with clear guidance and owner consent."
+          },
+          {
+            "q": "How long does training take?",
+            "a": "Timelines vary by goals and consistency. Your trainer will outline milestones after the evaluation."
+          },
+          {
+            "q": "Bootcamp vs In-Home — which should I choose?",
+            "a": "Bootcamp accelerates foundation and consistency. In-Home maximizes owner participation in your real environment. We’ll recommend the best fit after evaluation."
+          },
+          {
+            "q": "What happens after I book an evaluation?",
+            "a": "We confirm your time, meet your dog, define goals, and deliver a tailored plan with session structure and next steps."
+          }
+        ]
+      },
+      {
+        "id": "book",
+        "label": "Book Evaluation",
+        "title": "Book Your Evaluation",
+        "description": "Tell us about your dog and preferred times. We’ll confirm within 24 hours.",
+        "formFields": [
+          { "id": "first-name", "label": "First Name", "type": "text", "placeholder": "Enter your first name" },
+          { "id": "last-name", "label": "Last Name", "type": "text", "placeholder": "Enter your last name" },
+          { "id": "email", "label": "Email", "type": "email", "placeholder": "Enter your email address" },
+          { "id": "phone", "label": "Phone", "type": "tel", "placeholder": "(555) 123-4567" },
+          { "id": "dog-info", "label": "Tell us about your dog", "type": "textarea", "placeholder": "Dog's name, breed, age, goals, and any concerns..." }
+        ],
+        "submitButton": { "label": "Schedule Evaluation" },
+        "privacyNote": "By submitting, you agree to be contacted about scheduling. We never share your information."
+      },
+      {
+        "id": "footer",
+        "about": {
+          "logo": "/woof-dogs-logo.svg",
+          "description": "Building better relationships between dogs and their families through professional, positive training."
+        },
+        "links": {
+          "services": [
+            "Basic Obedience",
+            "Advanced Obedience",
+            "Off-Leash Reliability",
+            "Evaluation",
+            "Owner Guides",
+            "FAQ"
+          ],
+          "company": ["About Us", "Our Trainers", "Testimonials", "Contact"],
+          "resources": ["Blog", "PDF Guides", "FAQ"],
+          "legal": ["Privacy Policy", "Terms of Service"]
+        },
+        "social": ["Instagram", "Facebook"],
+        "serviceArea": "Palm Beach County • Boca Raton • Delray Beach • Boynton Beach • Surroundings"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+uploads = []
+
+[[generated]]
+id = "OvOt24fp9PYq1Zm1q9_TE"
+uri = "file://attached_assets/dog-hero-studio.png"
+type = "image"
+title = "generated_image"
+
+[[outputs]]
+id = "GPrKTXG8GzdmQJXcfpNjv"
+uri = "file://woof-dogs-overview.md"
+type = "text"
+title = "Woof Dogs — Complete Business Overview"

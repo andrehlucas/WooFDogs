@@ -1,0 +1,93 @@
+{
+  "category": "Dog Training Services",
+  "updated": "2025-10-29",
+  "services": [
+    {
+      "id": "puppy-foundations",
+      "title": "Puppy Foundations",
+      "badge": "8–20 weeks",
+      "summary": "Housebreaking, crate training, socialization, name recognition, bite inhibition.",
+      "href": "/services/puppy-training",
+      "image": "/images/services/puppy-foundations.jpg"
+    },
+    {
+      "id": "basic-obedience",
+      "title": "Basic Obedience",
+      "summary": "Sit, down, place, recall, leash manners, engagement and impulse control.",
+      "href": "/services/obedience/basic",
+      "image": "/images/services/basic-obedience.jpg"
+    },
+    {
+      "id": "advanced-obedience",
+      "title": "Advanced Obedience",
+      "summary": "Distraction proofing, duration/Distance/Distraction (3Ds), heel precision and off-switch.",
+      "href": "/services/obedience/advanced",
+      "image": "/images/services/advanced-obedience.jpg"
+    },
+    {
+      "id": "expert-obedience",
+      "title": "Expert Obedience",
+      "summary": "High reliability under heavy distraction, long-distance commands, public neutrality.",
+      "href": "/services/obedience/expert",
+      "image": "/images/services/expert-obedience.jpg"
+    },
+    {
+      "id": "offleash-basic",
+      "title": "Off-Leash Basic",
+      "summary": "Intro to e-collar literacy, safe off-leash recall and boundary awareness.",
+      "href": "/services/off-leash/basic",
+      "image": "/images/services/offleash-basic.jpg"
+    },
+    {
+      "id": "offleash-advanced",
+      "title": "Off-Leash Advanced",
+      "summary": "Reliable off-leash obedience around distractions with real-world scenarios.",
+      "href": "/services/off-leash/advanced",
+      "image": "/images/services/offleash-advanced.jpg"
+    },
+    {
+      "id": "aggression-management",
+      "title": "Aggression Management",
+      "badge": "Specialty",
+      "summary": "Reactivity, resource guarding, fear, and complex aggression cases handled by specialists.",
+      "href": "/services/aggression-management",
+      "image": "/images/services/aggression.jpg"
+    },
+    {
+      "id": "leash-reactivity",
+      "title": "Leash Reactivity Reset",
+      "summary": "Desensitization, counter-conditioning, structured walks and handler timing.",
+      "href": "/services/leash-reactivity",
+      "image": "/images/services/leash-reactivity.jpg"
+    },
+    {
+      "id": "separation-anxiety",
+      "title": "Separation Anxiety",
+      "summary": "Gradual departures, relaxation protocols, environment setup and daily plans.",
+      "href": "/services/separation-anxiety",
+      "image": "/images/services/separation-anxiety.jpg"
+    },
+    {
+      "id": "service-animal",
+      "title": "Service Animal Training",
+      "badge": "ADA-aware",
+      "summary": "Task training, public access standards, handler education and documentation guidance.",
+      "href": "/services/service-animal",
+      "image": "/images/services/service-animal.jpg"
+    },
+    {
+      "id": "therapy-dog",
+      "title": "Therapy Dog Prep",
+      "summary": "Temperament polishing, neutrality, and readiness for therapy evaluations.",
+      "href": "/services/therapy-dog",
+      "image": "/images/services/therapy-dog.jpg"
+    },
+    {
+      "id": "board-and-train",
+      "title": "Board & Train (Bootcamp)",
+      "summary": "Intensive immersive program with daily reps, structure and clear owner handoff.",
+      "href": "/services/board-and-train",
+      "image": "/images/services/board-train.jpg"
+    }
+  ]
+}

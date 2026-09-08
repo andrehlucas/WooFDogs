@@ -1,0 +1,51 @@
+- **ACTION**: Replace the “what happens during your assessment” steps and the “behavior issues we address” section with the PDF’s exact content.
+- **IMPLEMENT**: Replace the process section with this exact source block, preserving step order and headings:
+
+```text
+Our Process
+What Happens During Your Behavioral Assessment
+
+A professional behavioral consultation designed to understand your dog’s history, identify the factors contributing to the behavior, and develop a realistic training and behavior-modification plan.
+
+Step 1 — Behavioral History and Background Review
+We begin by gathering detailed information about your dog’s history, household environment, daily routine, previous training, medical background, and the behavioral concerns you are experiencing. We will ask when the behavior started, how often it occurs, what typically happens before and after each incident, and whether the behavior has changed over time. This helps us identify patterns, possible triggers, and contributing factors that may not be visible during a single appointment.
+
+Step 2 — Owner and Handler Interview
+A significant part of the assessment is a detailed conversation with the owner or handler. You will be asked to describe specific incidents, including what the dog did, what was happening at the time, how people responded, and what happened afterward. Whenever possible, we recommend that all household members or handlers who regularly interact with the dog participate in the assessment. Different people may experience or interpret the behavior differently, and their input can provide valuable information.
+
+Step 3 — Direct Behavioral Observation
+During the consultation, we observe your dog’s behavior in the assessment environment. We evaluate body language, arousal level, confidence, social interaction, recovery from stress, response to handling, engagement with the handler, and ability to focus. We may also observe food motivation, toy interest, frustration tolerance, impulse control, and response to basic cues when appropriate and safe.
+
+Step 4 — Identification of Triggers and Behavioral Patterns
+In most cases, we do not intentionally expose the dog to a known trigger or attempt to provoke an aggressive, fearful, or reactive response. Instead, we identify likely triggers and behavioral patterns through the owner interview, incident history, available videos, and the dog’s behavior during the assessment. This allows us to evaluate the concern without unnecessarily placing the dog, owner, staff, other animals, or members of the public at risk. Some triggers may require additional observation during future training sessions or in a controlled environment before a final conclusion can be made.
+
+Step 5 — Behavioral Assessment and Training Recommendations
+Based on the information provided and our direct observations, we explain our assessment of the behavior, the likely factors contributing to it, and the level of concern involved. We discuss the training methods, management strategies, safety precautions, and behavior-modification approach that may be appropriate for your dog. We also explain what owner participation will be required and what realistic progress may look like. Because behavior is influenced by many factors, recommendations may be adjusted as training progresses and additional information becomes available.
+
+Step 6 — Customized Training Plan and Program Options
+Before the assessment concludes, we present a recommended training plan based on your dog’s needs and your family’s goals. This may include private training, a structured board-and-train program, behavior-modification sessions, owner coaching, management protocols, or a combination of services. We explain the recommended program, anticipated training priorities, estimated timeline, owner responsibilities, and applicable pricing so you can make an informed decision. Many clients choose a training option during the assessment. Others prefer to review the written report before making a final decision.
+
+Step 7 — Written Assessment Report and Follow-Up
+Following the consultation, you will receive a written behavioral assessment and training recommendation by email. The report summarizes the concerns discussed, relevant behavioral history, observations, safety considerations, recommended training approach, and available program options. After the report has been sent, our office may contact you to answer questions, review the recommendations, and assist you with scheduling the appropriate training program.
+```
+
+- **IMPLEMENT**: Replace the “Behavior Issues We Address” section with the following exact source copy. Preserve the literal supplied heading for approval review before applying the visible-label terminology rule:
+
+```text
+WHAT WE ASSES
+
+Behavior Issues We Address
+
+Our behavioral assessments help us understand the concerns you are experiencing, identify likely contributing factors, evaluate potential safety risks, and recommend an appropriate training and behavior-modification plan. The assessment combines a detailed owner or handler interview with professional observation of your dog during the consultation.
+
+Aggression
+Aggressive behavior toward people or other animals is a serious concern that requires careful assessment, responsible management, and an individualized training plan. During the consultation, we review the dog’s behavioral history, the circumstances surrounding previous incidents, warning signals, escalation patterns, and the owner’s response. We also observe the dog’s body language, arousal level, social behavior, and interaction with the handler. Based on the available information, we identify likely contributing factors and recommend appropriate safety measures, training methods, and behavior-modification strategies.
+
+Anxiety & Fear
+Fear and anxiety may appear as avoidance, trembling, excessive panting, pacing, vocalization, destructive behavior, difficulty settling, or attempts to escape. During the assessment, we review when and where the behavior occurs, how long it lasts, what appears to trigger it, and how the dog recovers afterward. We also observe the dog’s body language and stress responses during the consultation. When separation-related behavior is reported, additional observation, video documentation, or veterinary consultation may be recommended.
+
+Reactivity
+Reactive behavior may include barking, lunging, pulling, freezing, avoidance, or difficulty disengaging from people, dogs, vehicles, bicycles, or other environmental stimuli. During the assessment, we review the situations in which the behavior occurs, the approximate distance at which the dog becomes concerned or loses focus, the intensity of the response, and how quickly the dog recovers. We do not intentionally provoke a reaction solely for testing purposes. When appropriate, thresholds and recovery patterns may be evaluated more precisely during future training sessions under controlled and safe conditions.
+
+Resource Guarding
+Resource guarding may involve food, toys, stolen objects, resting areas, personal space, or access to a particular person. During the assessment, we review the dog’s history of guarding, the resources involved, warning signals, bite history, escalation pattern, and the circumstances surrounding previous incidents. We generally do not intentionally provoke guarding behavior during the consultation. Based on the reported history and our observations, we recommend immediate safety and management measures along with an individualized behavior-modification plan.

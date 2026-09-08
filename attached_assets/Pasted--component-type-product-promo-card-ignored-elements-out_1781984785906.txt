@@ -1,0 +1,188 @@
+{
+  "component_type": "product_promo_card",
+  "ignored_elements": [
+    "outer white screenshot/canvas border/background"
+  ],
+  "overall_style": {
+    "visual_direction": "editorial fashion card",
+    "mood": "modern, soft, premium, lifestyle-focused",
+    "design_patterns": [
+      "full-bleed image",
+      "rounded card",
+      "bottom blur overlay",
+      "centered content",
+      "pill CTA button"
+    ]
+  },
+  "layout": {
+    "card_shape": {
+      "border": "none",
+      "border_radius": "large, approximately 18-24px",
+      "aspect_ratio": "portrait, around 3:4",
+      "overflow": "hidden"
+    },
+    "image": {
+      "placement": "full card background",
+      "fit": "cover",
+      "focal_point": "upper center, model face",
+      "composition": "subject centered vertically with sky background"
+    },
+    "content_area": {
+      "position": "bottom third",
+      "alignment": "center",
+      "padding": "medium horizontal padding",
+      "stack_order": [
+        "product title",
+        "CTA button"
+      ]
+    },
+    "cta": {
+      "shape": "rounded pill",
+      "position": "bottom center",
+      "width": "around 75-80% of card width",
+      "height": "compact",
+      "spacing_from_bottom": "medium"
+    }
+  },
+  "visual_hierarchy": {
+    "primary_focus": "model/product photography",
+    "secondary_focus": "product title",
+    "tertiary_focus": "Get In Touch button",
+    "hierarchy_notes": "The image dominates the card, while the title and CTA are intentionally minimal and refined."
+  },
+  "color_palette": {
+    "dominant_colors": [
+      {
+        "name": "deep sky blue",
+        "hex_estimate": "#006799",
+        "usage": "background image / sky"
+      },
+      {
+        "name": "soft pink suede",
+        "hex_estimate": "#C06A8A",
+        "usage": "jacket accent"
+      },
+      {
+        "name": "frosted blush gray",
+        "hex_estimate": "#C7A0AB",
+        "usage": "blurred bottom overlay"
+      },
+      {
+        "name": "white",
+        "hex_estimate": "#FFFFFF",
+        "usage": "text and CTA background"
+      },
+      {
+        "name": "dark charcoal",
+        "hex_estimate": "#333333",
+        "usage": "CTA text"
+      }
+    ],
+    "color_strategy": "Cool blue background contrasts with the warm pink jacket, creating a strong fashion/lifestyle visual."
+  },
+  "typography": {
+    "title": {
+      "text": "Collarless Faux Suede Jacket",
+      "style": "bold sans-serif",
+      "color": "white",
+      "size": "small",
+      "alignment": "center",
+      "line_height": "tight"
+    },
+    "button_text": {
+      "text": "Get In Touch",
+      "style": "bold or semi-bold sans-serif",
+      "color": "dark charcoal",
+      "size": "very small",
+      "alignment": "center"
+    },
+    "typography_notes": "The text feels clean and minimal, but the CTA text may be too small for accessibility on mobile."
+  },
+  "effects": {
+    "image_blur": {
+      "location": "bottom portion of the card",
+      "type": "soft blur / frosted overlay",
+      "purpose": "improves text readability while keeping the image visible"
+    },
+    "gradient": {
+      "location": "lower card area",
+      "colors": [
+        "transparent",
+        "soft gray",
+        "pink tint"
+      ],
+      "purpose": "creates depth and separates text from background"
+    },
+    "shadow": {
+      "usage": "minimal or none",
+      "note": "The design relies more on rounded corners and image treatment than heavy shadows."
+    }
+  },
+  "ux_strengths": [
+    "Strong visual impact with a clear lifestyle product photo",
+    "Simple content hierarchy",
+    "CTA is easy to locate",
+    "Rounded shape makes the card feel friendly and modern",
+    "Blur overlay keeps the bottom area soft and premium"
+  ],
+  "ux_weaknesses": [
+    "CTA text is very small and could be hard to read",
+    "Product title contrast may vary depending on background image brightness",
+    "The bottom blur slightly hides the product details",
+    "No visible pricing, category, or secondary product info"
+  ],
+  "accessibility_recommendations": [
+    "Increase CTA text size slightly",
+    "Add a darker subtle gradient behind the title for stronger contrast",
+    "Ensure title contrast meets WCAG AA standards",
+    "Use descriptive alt text for the product image",
+    "Make the entire card or CTA area tappable on mobile"
+  ],
+  "web_implementation_notes": {
+    "recommended_html_structure": [
+      "card container",
+      "background image",
+      "bottom overlay",
+      "title text",
+      "CTA button"
+    ],
+    "css_properties": {
+      "card": {
+        "position": "relative",
+        "overflow": "hidden",
+        "border_radius": "24px",
+        "background_size": "cover",
+        "background_position": "center top"
+      },
+      "overlay": {
+        "position": "absolute",
+        "bottom": "0",
+        "height": "45%",
+        "backdrop_filter": "blur(12px)",
+        "background": "linear-gradient(to bottom, transparent, rgba(220, 200, 205, 0.85))"
+      },
+      "content": {
+        "position": "absolute",
+        "bottom": "18px",
+        "left": "0",
+        "right": "0",
+        "text_align": "center",
+        "padding": "0 18px"
+      },
+      "button": {
+        "border_radius": "999px",
+        "background": "#FFFFFF",
+        "border": "none",
+        "padding": "10px 24px",
+        "font_weight": "700"
+      }
+    }
+  },
+  "design_rating": {
+    "visual_appeal": 9,
+    "readability": 7,
+    "accessibility": 6.5,
+    "modern_ui_quality": 8.5,
+    "overall": 8
+  }
+}

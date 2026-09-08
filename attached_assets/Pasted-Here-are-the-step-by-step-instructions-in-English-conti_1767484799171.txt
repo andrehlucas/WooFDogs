@@ -1,0 +1,173 @@
+Here are the step-by-step instructions in English, continuing with Method 3 (best technical approach): Element Visibility trigger for AJAX forms.
+
+Goal
+
+Track a Google Ads conversion when an evaluation form is successfully submitted, even if the form is AJAX-based (no page reload).
+
+Funnel:
+Google Search → Website → Evaluation Form → CRM
+
+Method 3 (Best technical approach):
+Trigger by Element Visibility (success message)
+
+Use this when, after form submission, the page shows a confirmation message like:
+
+“Thank you”, “Submitted successfully”, “We received your request”, etc.
+
+This method is very reliable for AJAX forms.
+
+STEP 1 — Confirm the success element on the site
+
+After submitting the form, inspect the page and identify the HTML element that appears only on success.
+
+Examples:
+
+.success-message
+
+#form-success
+
+.thank-you-text
+
+[data-testid="success"]
+
+You’ll need a CSS selector that uniquely identifies this element.
+
+STEP 2 — Create the Trigger in Google Tag Manager
+
+Go to Google Tag Manager
+
+Click Triggers → New
+
+Name it:
+
+Form Submit – Evaluation – Success Message
+
+
+Trigger type: Element Visibility
+
+Configure:
+
+Selection Method: CSS Selector
+
+Element Selector:
+Example:
+
+.success-message
+
+
+When to fire:
+
+✔ Once per page
+
+Minimum Percent Visible: 1%
+
+Observe DOM changes: ✔ Enabled
+(important for AJAX forms)
+
+Save the trigger
+
+STEP 3 — Create the Google Ads Conversion Tag
+
+Go to Tags → New
+
+Name it:
+
+Google Ads – Evaluation Form Submit
+
+
+Tag type: Google Ads Conversion Tracking
+
+Enter:
+
+Conversion ID (from Google Ads)
+
+Conversion Label (from Google Ads)
+
+Conversion value:
+
+Use a fixed value (optional), or
+
+Leave empty if you optimize only for volume
+
+Triggering:
+
+Select the Element Visibility trigger you just created
+
+Save the tag
+
+STEP 4 — Add Conversion Linker (required)
+
+If you don’t already have one:
+
+Create a new tag
+
+Tag type: Conversion Linker
+
+Trigger: All Pages
+
+Save
+
+⚠️ This is required for proper attribution (GCLID).
+
+STEP 5 — Test with GTM Preview Mode
+
+Click Preview in GTM
+
+Open your site
+
+Submit the evaluation form
+
+Confirm:
+
+The Element Visibility trigger fires
+
+The Google Ads Conversion tag fires
+
+Check no double firing
+
+STEP 6 — Publish the GTM container
+
+Once validated:
+
+Click Submit
+
+Publish the container
+
+STEP 7 — Verify in Google Ads
+
+Go to Tools → Conversions
+
+Open the conversion action
+
+Status should change to:
+
+Recording conversions (after first real conversion)
+
+You can also use:
+
+Tag Assistant
+
+Google Ads Diagnostics
+
+Best Practices (Important)
+
+✅ Use only ONE primary conversion for bidding
+
+❌ Avoid counting:
+
+Page views
+
+Button clicks
+
+Intermediate steps
+
+🎯 Optimize Search campaigns for this single form-submit conversion
+
+⏱ Expect 24–48 hours before Google Ads fully trusts the signal
+
+When this method is ideal
+
+✔ AJAX forms
+✔ No thank-you page
+✔ SPA / React / Next.js apps
+✔ High accuracy, no duplicate conversions

@@ -1,0 +1,59 @@
+{
+  "common_dog_training_issues": [
+    {
+      "issue_category": "Basic Obedience & Manners",
+      "common_behaviors": [
+        "Leash Pulling (Reactivity)",
+        "Jumping on people",
+        "Excessive Barking (Nuisance Barking)",
+        "Not coming when called (Poor Recall)",
+        "Counter Surfing/Stealing food"
+      ],
+      "owner_motivation": "The dog is difficult to manage in public or around guests, causing embarrassment, physical strain, or a breakdown in the human-animal bond. The owner seeks a reliable, well-mannered companion.",
+      "typical_service": "Obedience Training (Group Classes or Private Lessons)"
+    },
+    {
+      "issue_category": "Puppy Foundation",
+      "common_behaviors": [
+        "House Soiling (Potty Training)",
+        "Crate Aversion/Whining",
+        "Nipping/Biting",
+        "Destructive Chewing",
+        "Lack of Socialization"
+      ],
+      "owner_motivation": "The owner is overwhelmed by the new puppy and needs immediate, foundational guidance to prevent bad habits from forming. They want to ensure the puppy grows into a well-adjusted adult dog.",
+      "typical_service": "Puppy Training (Puppy Kindergarten, Puppy Prep Classes, or Private Puppy Consults)"
+    },
+    {
+      "issue_category": "Fear & Anxiety",
+      "common_behaviors": [
+        "Separation Anxiety (Destruction, Urination/Defecation when alone)",
+        "Noise Phobias (Thunder, Fireworks)",
+        "Shyness/Fear of strangers or new environments"
+      ],
+      "owner_motivation": "The dog's distress is causing significant damage to the home or is severely limiting the dog's quality of life. The owner feels helpless and needs specialized behavior modification to reduce the dog's stress.",
+      "typical_service": "Behavior Modification, Private Consultations with a Certified Behavior Consultant"
+    },
+    {
+      "issue_category": "Aggression & Reactivity",
+      "common_behaviors": [
+        "Dog-on-dog aggression (Leash Reactivity)",
+        "Aggression towards strangers",
+        "Resource Guarding (Food, Toys, Space)",
+        "Aggression towards family members"
+      ],
+      "owner_motivation": "The dog poses a safety risk to people or other animals, leading to fear, stress, and potential legal liability for the owner. The owner needs expert, specialized intervention to manage and rehabilitate the behavior.",
+      "typical_service": "Aggression Management, Behavioral Assessment, Private Behavior Modification Program"
+    },
+    {
+      "issue_category": "Advanced Control & Sport",
+      "common_behaviors": [
+        "Lack of off-leash reliability in high-distraction environments",
+        "Need for specialized skills (e.g., service tasks, protection work)",
+        "Preparation for Canine Good Citizen (CGC) or therapy dog certification"
+      ],
+      "owner_motivation": "The owner has mastered the basics and is looking to achieve a higher level of control, participate in dog sports, or certify their dog for a working role.",
+      "typical_service": "Advanced Obedience, Specialty Training (Service Animal Training, Protection Work)"
+    }
+  ]
+}

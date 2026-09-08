@@ -1,0 +1,228 @@
+You are working on the WooF Dogs website codebase. I need you to fix a technical SEO crawl-bloat issue found in Google Search Console.
+
+Context:
+Google Search Console shows “Crawled - currently not indexed” with 16.7K affected URLs. An exported sample of 1,000 URLs showed that 936 of them are fake homepage variants using a numeric `_g` query parameter, for example:
+
+https://woofdogs.com/?_g=4652688
+https://woofdogs.com/?_g=3188522
+https://www.woofdogs.com/?_g=6571300
+
+There are also junk query URLs such as:
+
+https://woofdogs.com/?wordfence_lh=1&hid=...
+https://woofdogs.com/?product/edit/44811655
+https://woofdogs.com/?zhHant/product/surugaya/...
+
+The sitemap is clean and contains normal canonical pages. The issue is that these junk parameter URLs currently return 200 OK instead of redirecting/canonicalizing clearly to the clean page. This creates crawl waste and duplicate homepage variants.
+
+Goal:
+Implement SEO-safe URL cleanup so Google, Bing, and users are sent to clean canonical URLs when junk parameters are present, without breaking legitimate marketing tracking parameters.
+
+Important:
+Do NOT block or strip legitimate ad/analytics parameters such as:
+- utm_source
+- utm_medium
+- utm_campaign
+- utm_term
+- utm_content
+- gclid
+- gbraid
+- wbraid
+- fbclid
+- msclkid
+
+These can remain because they are used for campaign attribution.
+
+Required changes:
+
+1. Add canonical tags
+Every indexable page should output a self-referencing canonical URL using the clean production URL.
+
+Examples:
+Homepage canonical:
+https://woofdogs.com/
+
+Service page canonical:
+https://woofdogs.com/obedience
+https://woofdogs.com/puppy-training
+https://woofdogs.com/evaluation
+https://woofdogs.com/service-animal-training
+https://woofdogs.com/board-and-train
+https://woofdogs.com/dog-training-boca-raton
+
+If this is a Next.js app, use the appropriate metadata/canonical implementation for the project structure:
+- If using App Router, use `metadata.alternates.canonical`
+- If using Pages Router, use `next/head`
+- If there is already an SEO component, update/reuse it instead of creating duplicate SEO logic
+
+Canonical URLs should:
+- Use `https://woofdogs.com`
+- Prefer non-www
+- Exclude query parameters
+- Avoid trailing slash inconsistency where possible, matching the sitemap style
+
+2. Redirect junk query parameters
+Add server/app-level redirects for known junk parameters.
+
+If the request URL has these query params, permanently redirect to the same clean pathname without the query string:
+- `_g`
+- `wordfence_lh`
+- `hid`
+
+Examples:
+https://woofdogs.com/?_g=4652688
+→ 301 or 308 to https://woofdogs.com/
+
+https://woofdogs.com/?wordfence_lh=1&hid=ABC123
+→ 301 or 308 to https://woofdogs.com/
+
+https://woofdogs.com/obedience?_g=12345
+→ 301 or 308 to https://woofdogs.com/obedience
+
+Also handle query-only spam paths where the full spam URL is embedded after `?`, such as:
+https://woofdogs.com/?zhHant/product/surugaya/67617917?campaign_uid=...
+https://woofdogs.com/?product/edit/44811655
+https://woofdogs.com/?toreka/toreka_single.html
+https://woofdogs.com/?man/kaitori/kantan.html
+https://woofdogs.com/?pcmypage
+https://woofdogs.com/?toiawase
+https://woofdogs.com/?affiliate
+https://woofdogs.com/?recruit
+https://woofdogs.com/?events/
+https://woofdogs.com/?cd.html
+https://woofdogs.com/?pcsp.html
+
+These should redirect to:
+https://woofdogs.com/
+
+3. Keep legitimate tracking parameters working
+Do not redirect if the only parameters are legitimate tracking parameters, such as:
+- utm_source
+- utm_medium
+- utm_campaign
+- utm_term
+- utm_content
+- gclid
+- gbraid
+- wbraid
+- fbclid
+- msclkid
+
+For example, this should remain accessible:
+https://woofdogs.com/?utm_source=google&utm_medium=cpc
+
+But this should redirect because it contains `_g`:
+https://woofdogs.com/?utm_source=google&_g=123456
+→ https://woofdogs.com/
+
+Use a conservative allowlist/denylist approach:
+- Denylist: `_g`, `wordfence_lh`, `hid`, and obvious spam query keys/patterns
+- Allowlist: marketing/ad tracking params
+- Unknown weird query-only paths should redirect if they look like crawler spam, product-edit spam, non-site paths, or arbitrary path fragments after `?`
+
+4. Normalize www to non-www if not already handled
+Check whether:
+https://www.woofdogs.com/
+redirects to:
+https://woofdogs.com/
+
+If not, implement a permanent redirect from `www.woofdogs.com` to `woofdogs.com`, preserving the clean path.
+
+Examples:
+https://www.woofdogs.com/
+→ https://woofdogs.com/
+
+https://www.woofdogs.com/service-animal-training
+→ https://woofdogs.com/service-animal-training
+
+If query params are junk, remove them during redirect:
+https://www.woofdogs.com/?_g=6571300
+→ https://woofdogs.com/
+
+5. Check old/redirecting URLs
+The Search Console export included these real URLs:
+- https://woofdogs.com/certified-therapy-dog
+- https://woofdogs.com/ask-for-an-evaluation/
+- https://www.woofdogs.com/service-animal-training
+
+Check how they behave.
+
+Expected:
+- `/ask-for-an-evaluation/` can redirect to `/evaluation` if `/evaluation` is the current canonical lead page.
+- `/service-animal-training` should resolve cleanly on non-www.
+- `/certified-therapy-dog` should either:
+  a) redirect to the closest relevant current page, likely `/therapy-dog` or `/service-animal-training`, OR
+  b) exist as a useful canonical page if that service is still offered.
+
+Do not leave valuable old URLs as dead, duplicate, or ambiguous pages.
+
+6. Update robots.txt carefully
+Current robots.txt allows the site and disallows `/api/` and `/hero-test/`. Keep that behavior.
+
+Do NOT simply block `?_g=` with robots.txt as the main fix, because Google may keep the URLs in “blocked” state and not see the canonical/redirect.
+
+Preferred fix is redirects/canonicals.
+
+Optionally add safe blocks only if appropriate and supported by the project, but do not block legitimate ad tracking parameters.
+
+7. Validate sitemap
+Confirm `https://woofdogs.com/sitemap.xml` only includes clean canonical URLs.
+
+Sitemap should not include:
+- `www` versions
+- query parameters
+- redirected old URLs
+- junk parameter URLs
+
+8. Add tests or verification
+Add automated checks if the project has tests. At minimum, manually verify with curl or local server requests.
+
+Required verification examples:
+
+A. Junk `_g` homepage URL redirects:
+curl -I "https://woofdogs.com/?_g=4652688"
+Expected: 301 or 308 to `https://woofdogs.com/`
+
+B. Junk `_g` page URL redirects:
+curl -I "https://woofdogs.com/obedience?_g=12345"
+Expected: 301 or 308 to `https://woofdogs.com/obedience`
+
+C. Wordfence junk redirects:
+curl -I "https://woofdogs.com/?wordfence_lh=1&hid=ABC"
+Expected: 301 or 308 to `https://woofdogs.com/`
+
+D. Legitimate UTM does not redirect:
+curl -I "https://woofdogs.com/?utm_source=google&utm_medium=cpc"
+Expected: 200 OK, or normal page response, not stripped
+
+E. www redirects to non-www:
+curl -I "https://www.woofdogs.com/?_g=6571300"
+Expected: 301 or 308 to `https://woofdogs.com/`
+
+F. Canonical appears on homepage:
+curl -L "https://woofdogs.com/" | grep -i canonical
+Expected canonical href should be `https://woofdogs.com/`
+
+G. Canonical appears on service page:
+curl -L "https://woofdogs.com/service-animal-training" | grep -i canonical
+Expected canonical href should be `https://woofdogs.com/service-animal-training`
+
+9. Do not make broad unrelated changes
+Keep the change scoped to:
+- redirects/middleware/server config
+- canonical metadata
+- sitemap/robots only if necessary
+- old URL redirects if applicable
+
+Do not redesign pages, change content, change tracking scripts, or alter GA/GTM logic.
+
+Deliverables:
+- Implement the changes
+- Tell me which files were changed
+- Show the redirect rules or middleware logic
+- Show the canonical implementation
+- Show verification results for the test URLs above
+- Explain any assumptions or limitations
+
+SEO outcome expected:
+This cleanup will reduce crawl waste, consolidate duplicate homepage variants, make Search Console indexing reports cleaner, and help Google focus crawling on real service/location pages like `/obedience`, `/puppy-training`, `/service-animal-training`, `/board-and-train`, and local pages such as `/dog-training-boca-raton`.

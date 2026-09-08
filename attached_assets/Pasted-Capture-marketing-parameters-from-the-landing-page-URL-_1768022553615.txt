@@ -1,0 +1,83 @@
+Capture marketing parameters from the landing page URL, persist them for the full user journey, and attach them to every lead/conversion submission (forms, checkout, contact requests, etc.), so we can attribute conversions back to campaigns.
+
+Parameters to capture
+
+UTM: utm_source, utm_medium, utm_campaign, utm_term, utm_content
+
+Google Ads IDs: gclid, wbraid, gbraid
+
+Optional: msclkid (if present), and any custom params we specify later
+
+Requirements
+
+Capture on first page view
+
+On initial page load, read query params from window.location.search.
+
+Normalize values (trim, decode, lower-case keys).
+
+If multiple exist, prefer the URL values.
+
+Persist
+
+Store the captured values in a durable client-side store:
+
+Prefer a first-party cookie (with sensible expiration, e.g., 30–90 days) and/or localStorage as fallback.
+
+Ensure values survive navigation, refresh, and multi-page flow.
+
+If this is a SPA (React/Next/etc.), also capture on client-side route changes.
+
+Attribution rules
+
+First-touch: If UTM values already exist in storage, do not overwrite them by default.
+
+Last-touch (optional): Implement a config flag to overwrite stored values when new UTMs arrive.
+
+Always store a timestamp for when values were first captured and last updated.
+
+Attach to submissions
+
+For every lead/conversion request:
+
+Include the stored UTM + IDs in the payload sent to the backend (e.g., marketingAttribution object).
+
+Also add hidden fields automatically to HTML forms if applicable.
+
+Ensure it works for:
+
+Contact/lead forms
+
+“Schedule evaluation” / booking flows
+
+Any API call that represents a conversion
+
+Backend storage
+
+Update the server endpoint(s) and database (or persistence layer) to store these fields with the lead/conversion record.
+
+Add validation (string length limits, null handling).
+
+Security & privacy
+
+Do not log full query strings in production logs.
+
+Respect consent: if we have a consent banner, only set marketing cookies after consent. If consent is not implemented, still implement with first-party storage and make it easy to gate later.
+
+Quality
+
+Add unit tests for the parser + attribution rules.
+
+Add an integration test or a simple “debug” page/console helper showing current stored attribution values.
+
+Update README/docs: how to test locally (example URL with UTMs), where data is stored, and where it appears in the DB/logical record.
+
+Deliverables
+
+Code changes implementing capture + persistence + submission attachment
+
+Updated API/DB schema or models to store the attribution fields
+
+Tests + brief documentation
+
+A short summary of what you changed and how to verify it end-to-end

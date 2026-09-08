@@ -1,0 +1,2 @@
+- [Blog/content pages must SSR](blog-ssr-soft404.md) — client-only useEffect fetch on content pages = Google soft 404 + Lighthouse NO_FCP; fetch in page.tsx, pass as initial props.
+- [Development migration journal](development-migration-journal.md) — the dev leads table predates Drizzle’s journal; verify migration history before replaying baseline migrations.

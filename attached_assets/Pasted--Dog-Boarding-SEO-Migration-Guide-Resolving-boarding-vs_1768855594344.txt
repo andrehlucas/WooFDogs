@@ -1,0 +1,254 @@
+ Dog Boarding SEO Migration Guide
+## Resolving /boarding vs /dog-boarding
+
+This document explains **exactly what to do** when you have both `/boarding` and `/dog-boarding`, and SEMrush provides optimization ideas for `/dog-boarding`.
+
+The goal is to:
+- avoid keyword cannibalization
+- consolidate authority
+- align URLs with real search behavior
+- maximize local SEO performance
+
+---
+
+## 1. The Problem
+
+Current situation:
+- Existing page: `/boarding`
+- SEMrush optimization ideas target: `/dog-boarding`
+
+SEO risks if both remain active:
+- content duplication
+- split ranking signals
+- keyword cannibalization
+- weaker performance for both URLs
+
+**Important rule:**  
+👉 Never optimize two URLs for the same intent.
+
+---
+
+## 2. Canonical Decision (Mandatory)
+
+### Choose ONE primary URL
+
+**Recommended canonical URL:**
+/dog-boarding
+
+
+Reasons:
+- Matches how users search (“dog boarding”)
+- Stronger keyword alignment
+- SEMrush already analyzes this URL
+- Clear service intent
+
+---
+
+## 3. URL Strategy
+
+### Canonical Page
+https://www.woofdogs.com/dog-boarding/
+
+
+### Secondary Page (to be removed from index)
+/boarding
+
+
+---
+
+## 4. Redirect Implementation (Critical)
+
+### Add a 301 Redirect
+Redirect the old URL permanently:
+
+/boarding → /dog-boarding
+
+
+Rules:
+- Use **301**, not 302
+- Avoid redirect chains
+- Ensure final URL returns **HTTP 200**
+
+This transfers:
+- link equity
+- historical authority
+- engagement signals
+
+---
+
+## 5. Canonical Tag
+
+On `/dog-boarding`, include:
+
+```html
+<link rel="canonical" href="https://www.woofdogs.com/dog-boarding/" />
+Do NOT add canonicals to /boarding once it redirects.
+
+6. Content Migration
+If /boarding already has good content:
+
+Steps:
+
+Review /boarding content
+
+Move relevant sections into /dog-boarding
+
+Improve wording where needed
+
+Publish updated /dog-boarding
+
+Apply the 301 redirect
+
+After redirect:
+
+/boarding should not contain unique content
+
+it should never be indexed again
+
+7. Apply SEMrush Ideas (Only Here)
+All SEMrush suggestions must be implemented only on:
+
+/dog-boarding
+This includes:
+
+semantic keyword enrichment
+
+internal linking
+
+SERP features (schema)
+
+UX improvements
+
+❌ Do not apply SEO changes to /boarding.
+
+8. Semantic Keywords to Include Naturally
+Use these terms inside the content, not stuffed:
+
+dog boarding
+
+boarding facilities
+
+Boca Raton
+
+dog boarding services
+
+professional pet boarding
+
+Best places:
+
+H2 sections
+
+short explanatory paragraphs
+
+FAQs
+
+“Areas Served” section
+
+9. Aggregate Rating Schema (Recommended)
+If the business has real Google reviews:
+
+Add LocalBusiness schema
+
+Include:
+
+ratingValue (e.g. 4.8)
+
+reviewCount (e.g. 114)
+
+Use JSON-LD
+
+Implement on /dog-boarding (and optionally globally)
+
+This can improve:
+
+click-through rate (CTR)
+
+trust
+
+local visibility
+
+10. Internal Linking (High Impact)
+Add internal links pointing to /dog-boarding from:
+
+Home page (services section)
+
+Obedience training page
+
+Board & Train page
+
+In-home training page
+
+Footer or main navigation
+
+Anchor examples:
+
+Dog Boarding
+
+Professional Dog Boarding in Boca Raton
+
+Avoid linking to /boarding after the redirect.
+
+11. Technical Checks (Do Not Skip)
+Before and after deploy:
+
+/dog-boarding returns 200
+
+/boarding returns 301
+
+No redirect loops
+
+Sitemap includes /dog-boarding only
+
+/boarding removed from sitemap
+
+Google Search Console shows canonical correctly
+
+12. What NOT to Do
+Do not keep both pages active
+
+Do not “differentiate” them artificially
+
+Do not let Google decide canonicals
+
+Do not optimize /boarding after redirect
+
+13. Final SEO Outcome
+If implemented correctly:
+
+single strong URL for dog boarding
+
+no cannibalization
+
+clearer intent for Google
+
+stronger local rankings
+
+easier future optimization
+
+14. Optional Next Steps
+After consolidation:
+
+add FAQ schema
+
+add a short explainer video
+
+expand local service areas
+
+monitor impressions and CTR in GSC
+
+Status Checklist
+ Canonical URL chosen
+
+ Content migrated
+
+ 301 redirect live
+
+ Internal links updated
+
+ SEMrush ideas applied
+
+ Schema implemented
+
+ Sitemap cleaned
+
+End of document.

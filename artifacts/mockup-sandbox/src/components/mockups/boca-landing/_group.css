@@ -1,0 +1,31 @@
+/* WooF Dogs design tokens — scoped to boca-landing mockup group */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 15%;
+  --primary: 0 85% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 10% 92%;
+  --secondary-foreground: 0 0% 15%;
+  --muted: 0 10% 94%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 10% 94%;
+  --accent-foreground: 0 0% 10%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 10% 88%;
+  --input: 0 10% 88%;
+  --ring: 0 85% 55%;
+  --radius: 1rem;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}

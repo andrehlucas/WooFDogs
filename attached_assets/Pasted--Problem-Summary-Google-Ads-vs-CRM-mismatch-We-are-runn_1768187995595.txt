@@ -1,0 +1,102 @@
+## Problem Summary (Google Ads vs CRM mismatch)
+
+We are running Google Ads Search campaigns and tracking the conversion action **“Evaluation Form Submission”**.
+Google Ads shows multiple conversions (e.g., 9), but our CRM (Perfex) shows only 1 real lead.
+
+This happens because the conversion event is currently being triggered **client-side** (front-end) when the form is submitted (or when a “success” UI state appears), but the CRM lead creation is validated **server-side**. As a result, Google Ads is counting conversions even when:
+
+* The lead fails to create in Perfex (API error, validation error, timeout, blocked request)
+* The user double-submits (double click, retry, refresh, SPA re-render)
+* The UI shows “success” but the CRM does not confirm creation
+* The CRM deduplicates or rejects duplicates while the conversion still fires
+* Form submits are recorded even if the lead is not a “real/qualified” record in CRM
+
+**Impact:** Smart Bidding optimizes toward “fake” conversions, CPA looks artificially good, and Ads decisions become unreliable.
+
+---
+
+## What we need (Goal)
+
+Only count a Google Ads conversion when the lead is **successfully created in Perfex** (i.e., we receive a confirmed success response + lead_id).
+If Perfex creation fails, **no conversion should be sent**.
+
+---
+
+## Recommended Solution (Best Practice)
+
+### Option A — Server-confirmed conversion (preferred)
+
+Move the conversion trigger to the backend:
+
+1. User submits form
+2. Backend validates and sends lead to Perfex
+3. If Perfex responds success (lead created)
+4. Only then trigger the Google Ads conversion
+
+**Key requirement:** The backend must be the single source of truth for “conversion happened.”
+
+Implementation patterns:
+
+* Do NOT fire conversion in front-end “onSubmit”
+* Only fire after Perfex API returns success
+* Add idempotency / dedupe on the server to prevent double conversions
+
+---
+
+## Two ways to send the conversion after CRM success
+
+### Option A1 — Offline Conversion Import (most robust)
+
+* Capture and store the Google click ID (`gclid`, plus `wbraid/gbraid`) from the landing page
+* Save the click ID with the lead record in Perfex (custom field)
+* When Perfex lead creation is confirmed, upload an **offline conversion** to Google Ads using:
+
+  * Conversion name: e.g., “Evaluation (CRM Approved)”
+  * `gclid`
+  * Conversion time
+  * Optional value
+
+This aligns Ads optimization with CRM reality and allows future “Qualified Lead” or “Closed Deal” imports.
+
+### Option A2 — Google Ads API / server-side event (near real-time)
+
+* After Perfex lead creation success, call Google Ads measurement endpoint / server-side tracking mechanism
+* This still requires capturing the click ID and associating it with the lead
+
+---
+
+## Immediate Tactical Fix (to reduce inflation while building the real fix)
+
+Until server-confirmed conversions are implemented:
+
+* Keep the current “Evaluation Form Submission” conversion, but set it as **Secondary** (observation only)
+* Create a new conversion action “Evaluation (CRM Approved)” to become the **Primary** goal for bidding once implemented
+
+---
+
+## Engineering Requirements / Acceptance Criteria
+
+1. A Google Ads conversion is fired **only** when Perfex lead creation succeeds (confirmed response + lead_id)
+2. Conversion is fired **once per lead** (prevent duplicates; add idempotency key)
+3. Store and pass marketing attribution in every lead:
+
+   * `gclid`, `wbraid`, `gbraid`
+   * `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`
+4. Add logging/monitoring:
+
+   * when lead creation fails
+   * when conversion fires (with lead_id + gclid)
+5. Provide a QA flow:
+
+   * simulate a Perfex failure → no conversion
+   * simulate success → conversion fires once and lead appears in Perfex
+
+---
+
+## Question for Replit / Best Approach
+
+Given this codebase (Next.js) and our current Perfex integration, what is the best implementation approach?
+
+* Can we implement **server-confirmed conversion** cleanly?
+* Is it better to do **offline conversion import** or direct server-side conversion via API?
+* What is the simplest secure architecture that prevents duplicate conversions and ensures Ads = CRM?

@@ -1,0 +1,62 @@
+modules = ["nodejs-20", "web", "python-3.11", "postgresql-16"]
+[agent]
+expertMode = true
+integrations = ["javascript_database:1.0.0", "google-mail:1.0.0"]
+
+[nix]
+channel = "stable-25_05"
+packages = ["unzip", "pandoc"]
+
+[deployment]
+deploymentTarget = "autoscale"
+run = ["node", "node_modules/next/dist/bin/next", "start", "-p", "5000"]
+build = ["bash", "-c", "echo 'Pushing database schema...' && npx drizzle-kit push --force 2>&1 || echo 'DB push warning (may already exist)' && npm run build"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 23636
+externalPort = 3000
+
+[[ports]]
+localPort = 23637
+externalPort = 3001
+
+[userenv]
+
+[userenv.shared]
+PERFEX_BASE_URL = "https://crm.woofdogs.com"
+CRM_TYPE = "perfex"
+PERFEX_LEAD_STATUS_ID = "2"
+PERFEX_SOURCE_ID = "6"
+INDEXNOW_KEY = "159ae8a75b96da4db366cbc9f315484d"
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 20000

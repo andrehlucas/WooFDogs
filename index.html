@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-title" content="Woof Dogs" />
+    <title>Woof Dogs - Professional Dog Training Services</title>
+    <meta name="description" content="Expert dog training services that build lasting bonds. From puppies to problem behaviors, certified trainers using positive reinforcement methods." />
+    <meta name="author" content="Woof Dogs" />
+
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Load Inter font with display=swap to prevent FOIT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Preload hero image for faster LCP -->
+    <link rel="preload" as="image" type="image/webp" href="/trainers.webp" fetchpriority="high" />
+
+    <meta property="og:title" content="Woof Dogs - Professional Dog Training" />
+    <meta property="og:description" content="Transform your dog into a well-behaved companion with our certified professional trainers." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Critical CSS for initial render -->
+    <style>
+      /* Font fallback with similar metrics to Inter */
+      :root {
+        --font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      
+      /* Reserve space for navbar to prevent layout shift */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Skeleton for hero section to prevent CLS */
+      #root:empty::before {
+        content: "";
+        display: block;
+        height: 100vh;
+        background: linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%);
+      }
+      
+      @media (prefers-color-scheme: dark) {
+        #root:empty::before {
+          background: linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

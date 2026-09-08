@@ -1,0 +1,93 @@
+Here’s what needs to be done, pulled directly from that conversation and organized into an execution checklist (priority order).
+
+1) Lock the preferred domain everywhere (technical SEO)
+
+Goal: only one “version” of the site exists for Google + users.
+	•	301 redirect: https://www.woofdogs.com/ → https://woofdogs.com/
+	•	Canonicals: every page’s canonical tag points to https://woofdogs.com/...
+	•	Sitemap: regenerate/replace sitemap URLs so they’re all https://woofdogs.com (no www, no http)
+	•	Internal links cleanup: navigation, footer, breadcrumbs, buttons, in-content links → all use the non-www version
+	•	Tracking pixels/embeds: update any scripts (GTM, Meta pixel, call tracking, booking embeds) that reference the www domain
+
+Done when: typing www always lands on non-www, and page source shows canonical = non-www.
+
+⸻
+
+2) Build the Top-5 city pages (local SEO landing pages)
+
+Goal: rank for “dog training + city” and convert.
+
+Create/strengthen these pages (clean URLs):
+	•	/dog-training-boca-raton/
+	•	/dog-training-wellington/
+	•	/dog-training-loxahatchee/
+	•	/dog-training-west-palm-beach/
+	•	/dog-training-delray-beach/
+
+Each city page should include (same blueprint)
+	•	H1: Dog Training in [City]
+	•	Service-forward sections (your priority order):
+	•	Obedience Training in [City]
+	•	Puppy Training in [City]
+	•	Service Animal Training in [City]
+	•	What makes WooF Dogs different (credentials, philosophy, outcomes)
+	•	Common issues you solve (reactivity, leash pulling, jumping, separation anxiety, etc.)
+	•	Your process (evaluation → plan → sessions → homework → follow-up)
+	•	Proof (testimonials, results, case studies)
+	•	Pricing/Packages (at least directional / “starting at” or “call for quote” + what’s included)
+	•	NAP / Service Area statement (consistent business info)
+	•	Localized FAQ (6–8 questions) tailored to that city
+	•	Strong CTA: “Book a free phone consult” / “Schedule an evaluation”
+
+Done when: all 5 pages exist, are indexable, and are linked from the site (next section).
+
+⸻
+
+3) Apply title tags + meta descriptions (templates already defined)
+
+Goal: improve CTR and local relevance.
+
+For each city page:
+
+Title (55–60 chars target):
+Dog Training in [City] | WooF Dogs
+
+Meta (150–160 chars target):
+Professional dog training in [City]. Obedience + puppy training + service animal training. Serving nearby areas. Call now to schedule a consult.
+
+Done when: titles/metas are implemented on-page (not just in a plugin preview) and visible in GSC once crawled.
+
+⸻
+
+4) Create the internal linking “loop” (indexing + rankings)
+
+Goal: make Google clearly understand the relationship between services ↔ cities.
+	•	Homepage: add a “Service Areas” section linking to the 5 city pages
+	•	Service pages: add a “Where we work” section linking to the 5 city pages
+(at minimum on: Obedience, Puppy, Service Animal pages)
+	•	City pages: link back to core service pages (Obedience / Puppy / Service Animal)
+
+Done when: every city page has at least a few internal links pointing to it, and it links back to the service hub pages.
+
+⸻
+
+5) Publishing + QA pass (so you don’t create SEO problems)
+	•	Make sure the city pages are unique (no near-duplicate intros) → customize local sections + FAQs
+	•	Confirm each city page has:
+	•	one H1
+	•	clean URL
+	•	indexable (no noindex)
+	•	fast-loading, mobile-friendly layout
+	•	Add them to the HTML sitemap (if you have one) and XML sitemap
+
+⸻
+
+6) Submit + validate in Google Search Console (so Google picks it up faster)
+
+After the above is live:
+	•	Submit updated sitemap in GSC
+	•	URL Inspection → Request Indexing for each of the 5 city pages
+	•	Monitor:
+	•	indexing status
+	•	impressions/CTR per city page
+	•	queries like “dog training boca raton”, “puppy training wellington”, etc.

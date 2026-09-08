@@ -1,0 +1,81 @@
+3. Limpar erros e exclusões que desperdiçam rastreamento
+No relatório de páginas:
+41 URLs 404
+24 URLs com redirecionamento
+26 URLs alternativas com canonical correto
+4 URLs com noindex
+20 URLs descobertas, mas ainda não indexadas
+A ação correta depende do tipo:
+Situação	Ação recomendada
+404 com link interno ou no sitemap	Corrigir o link; remover do sitemap; redirecionar se houver equivalente
+404 sem equivalente e sem links	Pode permanecer 404/410; apenas remova referências internas
+Página com redirect	Não deixe a URL redirecionada em sitemap, menu ou links internos
+Alternate canonical	Normal se for duplicata intencional; confira se aponta para a melhor URL
+noindex	Confirme se a exclusão é intencional; se a página precisa receber tráfego, retire a tag
+Descoberta, não indexada	Reforce links internos e confirme qualidade/uniquidade antes de solicitar indexação
+
+
+Não trate “URLs excluídas” como um número que precisa chegar a zero. O objetivo é que URLs importantes sejam indexadas e URLs irrelevantes sejam excluídas de propósito.
+Páginas com maior potencial de crescimento
+Estas já possuem impressões e deveriam ser tratadas primeiro:
+Página	Impressões	Cliques	Diagnóstico
+/dog-training-delray-beach	2.814	3	Prioridade máxima; visibilidade alta e CTR quase nulo
+/dog-training-boca-raton	2.299	10	Precisa ganhar relevância local e melhorar snippet
+/dog-training-loxahatchee	2.200	9	Mesmo cenário; oportunidade local clara
+/service-animal-training	1.820	14	Boa página comercial para aprofundar e converter
+/board-and-train	1.671	21	Já responde; otimizar para ampliar posições e conversão
+/blog/board-and-train-vs-in-home-training	943	8	Conteúdo de meio de funil com potencial de levar para serviço
+
+
+Modelo para otimizar cada página local
+Não basta trocar o nome da cidade. Cada página precisa provar relevância naquela localidade.
+Estrutura recomendada:
+Title:
+Dog Training in Delray Beach, FL | Woof Dogs
+
+H1:
+Professional Dog Training in Delray Beach, FL
+
+Abertura direta, em 60–100 palavras:
+serviço oferecido;
+tipo de cão/problema;
+cidade e área atendida;
+diferencial concreto;
+CTA para avaliação.
+
+Bloco “Serviços em [cidade]”:
+filhotes;
+obediência;
+agressividade/reatividade;
+board and train;
+behavior assessment;
+service animal training, quando aplicável.
+
+Bloco de prova local:
+bairros/regiões atendidos, se verdadeiro;
+depoimento real de cliente;
+foto/case real;
+mapa ou referência operacional legítima;
+perguntas frequentes específicas.
+
+FAQ:
+“How much does dog training cost in Delray Beach?”
+“Do you offer in-home dog training in Delray Beach?”
+“Can you help with aggressive or reactive dogs?”
+“How long does dog training take?”
+
+Links internos para:
+Board and Train;
+Aggression Management;
+Obedience;
+Behavioral Assessment;
+Contact/consulta;
+demais páginas geográficas somente se fizer sentido.
+
+CTA próximo do topo e ao fim:
+avaliação comportamental;
+telefone;
+formulário;
+disponibilidade/local de atendimento.
+
+Para Delray Beach, faça isso primeiro. O aumento de 138% em impressões mostra que o Google já está testando a página. É o momento certo de melhorar relevância e CTR.

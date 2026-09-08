@@ -1,0 +1,57 @@
+{
+  "task": "Update the Woof Dogs website mega menu by replacing the existing items with a new 'Services' menu. Maintain the same layout: two large feature cards on the left, three quick links on the right, and three compact cards on the bottom row.",
+  "structure": {
+    "leftColumn": [
+      {
+        "title": "Aggression Management",
+        "description": "Targeted programs for reactivity, fear, and complex behavior cases.",
+        "icon": "😡"
+      },
+      {
+        "title": "Board & Train (Bootcamp)",
+        "description": "Intensive stay-and-train program for fast, reliable results.",
+        "icon": "🏕️"
+      }
+    ],
+    "rightColumn": [
+      {
+        "title": "Behavior Evaluation — Start Here",
+        "description": "Book an assessment to map your dog’s personalized plan.",
+        "icon": "📋"
+      },
+      {
+        "title": "Compare Programs",
+        "description": "See what’s included in each service and expected outcomes.",
+        "icon": "⚖️"
+      },
+      {
+        "title": "FAQs & Owner Guide",
+        "description": "Prep, homework, and what to expect session-by-session.",
+        "icon": "❓"
+      }
+    ],
+    "bottomRow": [
+      {
+        "title": "Obedience & Off-Leash",
+        "description": "From basics to advanced off-leash reliability.",
+        "icon": "🦮"
+      },
+      {
+        "title": "Puppy Training",
+        "description": "Potty routine, socialization, and early foundations.",
+        "icon": "🐶"
+      },
+      {
+        "title": "Service & Therapy Dog",
+        "description": "Task training, suitability, and preparation pathways.",
+        "icon": "❤️‍🩹"
+      }
+    ]
+  },
+  "instructions": {
+    "design": "Preserve the same grid and layout style used in the previous mega menu (rounded cards, icons on top, consistent typography).",
+    "classes": "Maintain Tailwind structure such as 'grid grid-cols-3 gap-4' or whatever is already used.",
+    "interactions": "Keep hover and transition animations consistent with the existing menus (About, Training, etc.).",
+    "goal": "Implement the new Services menu using the same visual design and proportions, but with updated text, icons, and descriptions aligned to Woof Dogs’ services."
+  }
+}

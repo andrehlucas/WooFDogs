@@ -1,0 +1,136 @@
+2026-01-03 11:37:00.63
+da64a41b
+User
+syscall: 'getaddrinfo',
+2026-01-03 11:37:00.63
+da64a41b
+User
+code: 'EAI_AGAIN',
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async u (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:2499)
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async d (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:7140)
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async d (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:2304)
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async c (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:8181) {
+2026-01-03 11:37:00.63
+da64a41b
+User
+}
+2026-01-03 11:37:00.63
+da64a41b
+User
+errno: -3001,
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async l (.next/server/chunks/[root-of-the-server]__afcc6a25._.js:8:49204)
+2026-01-03 11:37:00.63
+da64a41b
+User
+[DB] Error ensuring tables exist: Error: getaddrinfo EAI_AGAIN helium
+2026-01-03 11:37:00.63
+da64a41b
+User
+hostname: 'helium'
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async u (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:2499)
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async d (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:7140)
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async d (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:2304)
+2026-01-03 11:37:00.63
+da64a41b
+User
+hostname: 'helium'
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async l (.next/server/chunks/[root-of-the-server]__afcc6a25._.js:8:49204)
+2026-01-03 11:37:00.63
+da64a41b
+User
+errno: -3001,
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async c (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:8181) {
+2026-01-03 11:37:00.63
+da64a41b
+User
+}
+2026-01-03 11:37:00.63
+da64a41b
+User
+code: 'EAI_AGAIN',
+2026-01-03 11:37:00.63
+da64a41b
+User
+[API] Failed to initialize tables: Error: getaddrinfo EAI_AGAIN helium
+2026-01-03 11:37:00.63
+da64a41b
+User
+syscall: 'getaddrinfo',
+2026-01-03 11:37:00.63
+da64a41b
+User
+code: 'EAI_AGAIN',
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async d (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:7140)
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async d (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:2304)
+2026-01-03 11:37:00.63
+da64a41b
+User
+hostname: 'helium'
+2026-01-03 11:37:00.63
+da64a41b
+User
+[API] Lead submission error: Error: getaddrinfo EAI_AGAIN helium
+2026-01-03 11:37:00.63
+da64a41b
+User
+syscall: 'getaddrinfo',
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async c (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:8181) {
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async u (.next/server/chunks/[root-of-the-server]__e95b377d._.js:3:2499)
+2026-01-03 11:37:00.63
+da64a41b
+User
+[API] Server error details: getaddrinfo EAI_AGAIN helium
+2026-01-03 11:37:00.63
+da64a41b
+User
+errno: -3001,
+2026-01-03 11:37:00.63
+da64a41b
+User
+}
+2026-01-03 11:37:00.63
+da64a41b
+User
+at async l (.next/server/chunks/[root-of-the-server]__afcc6a25._.js:8:49204)

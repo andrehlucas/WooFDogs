@@ -1,0 +1,173 @@
+{
+  "component": "HeroSection",
+  "variant": "split-visual-trust",
+  "brand": {
+    "name": "Woof Dogs",
+    "primaryColor": "#EF2B2D",
+    "primaryColorDark": "#D91F22",
+    "textColor": "#202124",
+    "mutedTextColor": "#6F6F73",
+    "backgroundColor": "#FFFFFF",
+    "softAccentColor": "#FDEAEA",
+    "borderColor": "#E5E2E2",
+    "borderRadius": {
+      "pill": "999px",
+      "button": "14px",
+      "card": "18px"
+    }
+  },
+  "navigation": {
+    "logo": {
+      "src": "/assets/logo-woof-dogs.svg",
+      "alt": "Woof Dogs"
+    },
+    "items": [
+      {
+        "label": "About Woof Dogs",
+        "href": "/about",
+        "hasDropdown": true
+      },
+      {
+        "label": "Services",
+        "href": "/services",
+        "hasDropdown": true
+      },
+      {
+        "label": "Dog Boarding",
+        "href": "/dog-boarding",
+        "hasDropdown": false
+      }
+    ],
+    "rightActions": [
+      {
+        "label": "Customer Login",
+        "href": "/login",
+        "style": "text"
+      },
+      {
+        "label": "Get Started",
+        "href": "/get-started",
+        "style": "primary"
+      }
+    ]
+  },
+  "hero": {
+    "layout": {
+      "type": "split",
+      "contentSide": "left",
+      "visualSide": "right",
+      "maxWidth": "1440px",
+      "minHeight": "calc(100vh - 82px)",
+      "verticalAlignment": "center",
+      "contentWidth": "52%",
+      "visualWidth": "48%"
+    },
+    "eyebrow": {
+      "enabled": true,
+      "icon": "map-pin",
+      "text": "Professional Dog Training in Palm Beach County",
+      "style": "soft-pill"
+    },
+    "headline": {
+      "text": "Dog Training That Helps Your Dog Listen in the Real World",
+      "tag": "h1",
+      "maxWidth": "760px",
+      "emphasis": []
+    },
+    "subheadline": {
+      "text": "From leash pulling and jumping to advanced off-leash reliability, every program starts with a professional evaluation and a plan built around your dog.",
+      "maxWidth": "640px"
+    },
+    "actions": [
+      {
+        "label": "Book Evaluation",
+        "href": "/book-evaluation",
+        "style": "primary",
+        "icon": "arrow-right",
+        "priority": 1
+      },
+      {
+        "label": "See Training Programs",
+        "href": "/training-programs",
+        "style": "secondary",
+        "priority": 2
+      }
+    ],
+    "trustLine": {
+      "enabled": true,
+      "icon": "shield-check",
+      "items": [
+        "Private training",
+        "Real-world obedience",
+        "Serving Boca Raton, Delray, Wellington & nearby areas"
+      ],
+      "separator": "dot"
+    },
+    "proofCards": [
+      {
+        "type": "review-summary",
+        "enabled": true,
+        "avatars": [
+          "/assets/reviews/avatar-1.jpg",
+          "/assets/reviews/avatar-2.jpg",
+          "/assets/reviews/avatar-3.jpg"
+        ],
+        "rating": 5,
+        "headline": "600+ 5-star reviews",
+        "description": "from happy dog parents"
+      },
+      {
+        "type": "feature-card",
+        "enabled": true,
+        "icon": "clipboard-paw",
+        "headline": "Professional Evaluation",
+        "description": "Every program begins with a one-on-one evaluation."
+      }
+    ],
+    "visual": {
+      "type": "image",
+      "src": "/assets/hero/dog-training-real-world.jpg",
+      "alt": "Dog trainer working with a calm golden retriever outdoors",
+      "position": "right",
+      "treatment": {
+        "fit": "cover",
+        "gradientOverlay": "left-to-right-white-fade",
+        "rounded": false
+      }
+    },
+    "floatingCard": {
+      "enabled": true,
+      "position": "right-center",
+      "icon": "shield-check",
+      "headline": "Balanced. Positive. Proven.",
+      "description": "Modern training methods that build obedience and confidence."
+    }
+  },
+  "responsive": {
+    "desktop": {
+      "layout": "split",
+      "headlineSize": "64px",
+      "sectionPadding": "96px 72px"
+    },
+    "tablet": {
+      "layout": "split-condensed",
+      "headlineSize": "48px",
+      "sectionPadding": "72px 40px"
+    },
+    "mobile": {
+      "layout": "stacked",
+      "contentOrder": [
+        "eyebrow",
+        "headline",
+        "subheadline",
+        "actions",
+        "visual",
+        "trustLine",
+        "proofCards"
+      ],
+      "headlineSize": "38px",
+      "sectionPadding": "48px 24px",
+      "actionsLayout": "stacked"
+    }
+  }
+}

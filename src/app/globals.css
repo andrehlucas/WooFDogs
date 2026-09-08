@@ -1,0 +1,376 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    --navbar-height: 4rem;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    --primary: 0 85% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 10% 92%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 0 10% 94%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 10% 88%;
+    --input: 0 10% 88%;
+    --ring: 0 85% 48%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 85% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 10% 18%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 10% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 75% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 10% 18%;
+    --input: 0 10% 18%;
+    --ring: 0 85% 48%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply bg-background text-foreground;
+    overflow-x: clip;
+    width: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: clip;
+    width: 100%;
+  }
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes bento2-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6%); }
+}
+@keyframes bento2-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+@keyframes bento2-tilt {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+@keyframes bento2-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(6%, -6%, 0); }
+}
+@keyframes bento2-glow {
+  0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 0 rgba(0,0,0,0.4)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 6px rgba(0,0,0,0.2)); }
+}
+@keyframes bento2-intro {
+  0% { opacity: 0; transform: translate3d(0, 28px, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes bento2-card {
+  0% { opacity: 0; transform: translate3d(0, 18px, 0) scale(0.96); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+/* Blog Post Typography Styles */
+@layer components {
+  .blog-content {
+    @apply max-w-none;
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    color: hsl(var(--foreground) / 0.9);
+  }
+
+  .blog-content h1 {
+    @apply text-3xl md:text-4xl font-bold mt-12 mb-6 text-foreground tracking-tight;
+    border-bottom: 3px solid hsl(var(--primary));
+    padding-bottom: 0.5rem;
+  }
+
+  .blog-content h2 {
+    @apply text-2xl md:text-3xl font-bold mt-12 mb-5 text-foreground tracking-tight;
+    position: relative;
+    padding-left: 1rem;
+  }
+
+  .blog-content h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    bottom: 0.15em;
+    width: 4px;
+    background: hsl(var(--primary));
+    border-radius: 2px;
+  }
+
+  .blog-content h3 {
+    @apply text-xl md:text-2xl font-semibold mt-10 mb-4 text-foreground;
+  }
+
+  .blog-content h4 {
+    @apply text-lg md:text-xl font-semibold mt-8 mb-3 text-foreground;
+  }
+
+  .blog-content h5 {
+    @apply text-base md:text-lg font-medium mt-6 mb-2 text-foreground uppercase tracking-wide;
+  }
+
+  .blog-content h6 {
+    @apply text-sm md:text-base font-medium mt-5 mb-2 text-muted-foreground uppercase tracking-wider;
+  }
+
+  .blog-content p {
+    @apply mb-6;
+  }
+
+  .blog-content blockquote {
+    @apply my-8 pl-6 py-4 border-l-4 border-primary bg-muted/30 rounded-r-lg;
+    font-style: italic;
+  }
+
+  .blog-content blockquote p {
+    @apply mb-0 text-foreground/80;
+    font-size: 1.125rem;
+  }
+
+  .blog-content ul,
+  .blog-content ol {
+    @apply my-6 pl-6;
+  }
+
+  .blog-content ul {
+    list-style-type: disc;
+  }
+
+  .blog-content ol {
+    list-style-type: decimal;
+  }
+
+  .blog-content li {
+    @apply mb-2.5;
+    padding-left: 0.25rem;
+  }
+
+  .blog-content a {
+    @apply text-primary font-medium underline underline-offset-4 decoration-primary/30 hover:decoration-primary transition-colors;
+  }
+
+  .blog-content img {
+    @apply rounded-xl my-8 shadow-sm;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .blog-content figure {
+    @apply my-8;
+  }
+
+  .blog-content svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blog-content figure svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .blog-content figcaption {
+    @apply text-center text-sm text-muted-foreground mt-3 italic;
+  }
+
+  .blog-content pre {
+    @apply my-8 p-5 rounded-xl bg-muted overflow-x-auto border border-border/50;
+    font-size: 0.875rem;
+  }
+
+  .blog-content code {
+    @apply px-1.5 py-0.5 rounded-md bg-muted text-sm font-medium;
+  }
+
+  .blog-content pre code {
+    @apply p-0 bg-transparent font-normal;
+  }
+
+  .blog-content hr {
+    @apply my-10 border-border;
+  }
+
+  .blog-content .table-wrapper {
+    @apply my-8 overflow-x-auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0.75rem;
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 1px 4px hsl(var(--foreground) / 0.08);
+  }
+
+  .blog-content table {
+    @apply w-full border-collapse;
+    min-width: 500px;
+  }
+
+  .blog-content .table-wrapper table {
+    margin: 0;
+    border: none;
+  }
+
+  .blog-content th,
+  .blog-content td {
+    @apply border border-border px-4 py-2.5 text-left text-sm;
+  }
+
+  .blog-content th {
+    @apply bg-muted font-semibold text-foreground;
+  }
+
+  .blog-content tr:nth-child(even) td {
+    @apply bg-muted/30;
+  }
+
+  .blog-content strong {
+    @apply font-semibold text-foreground;
+  }
+
+  /* Hero bento animations (moved out of JS to keep boot light) */
+  @keyframes bento2-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6%); }
+  }
+  @keyframes bento2-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.08); opacity: 1; }
+  }
+  @keyframes bento2-tilt {
+    0% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg); }
+  }
+  @keyframes bento2-drift {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(6%, -6%, 0); }
+  }
+  @keyframes bento2-glow {
+    0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 0 rgba(0,0,0,0.4)); }
+    50% { opacity: 1; filter: drop-shadow(0 0 6px rgba(0,0,0,0.2)); }
+  }
+  @keyframes bento2-intro {
+    0% { opacity: 0; transform: translate3d(0, 28px, 0); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  @keyframes bento2-card {
+    0% { opacity: 0; transform: translate3d(0, 18px, 0) scale(0.96); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+  }
+  @keyframes hero-cta-fade {
+    0% { opacity: 0; transform: translate3d(0, 6px, 0); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  .hero-cta-fade {
+    animation: hero-cta-fade 0.4s ease-out 0.3s both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-cta-fade { animation: none; opacity: 1; }
+  }
+
+  /* Reading progress bar */
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)));
+    z-index: 100;
+    transition: width 0.15s ease-out;
+    box-shadow: 0 0 8px hsl(var(--primary) / 0.3);
+  }
+}

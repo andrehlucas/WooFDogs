@@ -1,0 +1,163 @@
+Page-by-page analysis (based strictly on the report)
+1) https://woofdogs.com/puppy-training
+Field	Value
+Meta Description	VIP puppy training program with age-appropriate curriculum. Build a strong foundation for your puppy's development.
+Length / Pixels	115 chars / 729 px
+Indexability	Indexable
+Screaming Frog flags (from data)	Too short (<120 chars). No local modifier present.
+
+Reasoning (Meta Description): At 115 characters, it’s on the short side, leaving CTR “value” on the table. It also doesn’t include a geographic cue (South Florida / nearby cities), which matters for local dog training intent.
+
+Recommendation (example rewrite):
+“Puppy training in South Florida with age-appropriate lessons and real-life coaching. Build manners and routines fast—book an evaluation today.”
+
+2) https://woofdogs.com/service-animal-training
+Field	Value
+Meta Description	Specialized service dog training with task-specific training. Supporting individuals with disabilities.
+Length / Pixels	119 chars / 710 px
+Indexability	Indexable
+Screaming Frog flags (from data)	Too short (<120 chars). No local modifier present.
+
+Reasoning: This reads more like a definition than a click-enticing snippet, and it’s short. Adding location + outcome language typically improves local CTR.
+
+Recommendation:
+“Service dog training in South Florida focused on task work and public-access skills. Customized plans and handler coaching—schedule an assessment.”
+
+3) https://woofdogs.com/behavioral-assessment
+Field	Value
+Meta Description	Professional behavioral assessment for dogs with aggressive, reactive or anxious behavior. Serving South Florida.
+Length / Pixels	127 chars / 797 px
+Indexability	Indexable
+Screaming Frog flags (from data)	None for length. Local modifier present (“South Florida”).
+
+Reasoning: This is in a good length range and includes local relevance. You can still boost CTR by adding a clearer “what they get” + CTA.
+
+Recommendation:
+“Behavioral assessments in South Florida to identify triggers, reactivity, aggression, or anxiety. Get a clear training plan—book your evaluation.”
+
+4) https://woofdogs.com/obedience
+Field	Value
+Meta Description	Professional obedience training for dogs of all ages. Teaching reliable commands, manners, and impulse control.
+Length / Pixels	127 chars / 770 px
+Indexability	Indexable
+Screaming Frog flags (from data)	No length flag. No local modifier present.
+
+Reasoning: Solid length, but it’s generic. Adding geographic relevance and 1–2 concrete outcomes (recall/loose leash) usually lifts CTR for local queries.
+
+Recommendation:
+“Obedience training in South Florida for puppies to adult dogs—manners, impulse control, recall, and loose leash walking. Get started today.”
+
+5) https://woofdogs.com/aggression-management
+Field	Value
+Meta Description	Professional behavior modification for reactivity and aggression. Expert guidance, structured plans, proven methods.
+Length / Pixels	141 chars / 866 px
+Indexability	Indexable
+Screaming Frog flags (from data)	No length flag. No local modifier present.
+
+Reasoning: This is close to ideal length and strong positioning, but it lacks local intent signals (South Florida / cities). For competitive “aggression/reactivity” terms, local cues matter.
+
+Recommendation:
+“Aggression management in South Florida for reactivity, fear, and bite-risk behaviors. Safety-first behavior plans and coaching—schedule a consult.”
+
+6) https://woofdogs.com/dog-training-wellington
+Field	Value
+Meta Description	Professional dog training in Wellington. Obedience + puppy training + service animal training. Serving nearby areas. Call now to schedule a consult.
+Length / Pixels	148 chars / 902 px
+Indexability	Indexable
+Screaming Frog flags (from data)	None (length is fine; close to pixel edge but still under common truncation thresholds).
+
+Reasoning: Strong local targeting and service breadth. If you want more clicks, replace “Call now” with a benefit + softer CTA (many searchers prefer “Book” vs “Call”).
+
+Recommendation:
+“Dog training in Wellington for obedience, puppy training, and service dog work. Get clear results with a structured plan—book a consult today.”
+
+7) https://woofdogs.com/dog-training-boca-raton
+Field	Value
+Meta Description	Professional dog training in Boca Raton. Obedience + puppy training + service animal training. Serving nearby areas. Call now to schedule a consult.
+Length / Pixels	148 chars / 902 px
+Indexability	Indexable
+Screaming Frog flags (from data)	None.
+
+Reasoning: Same structure as Wellington page (not a “duplicate” per SF because the city differs). Consider adding a differentiator (results, behavior focus) to stand out in Boca competition.
+
+Recommendation:
+“Dog training in Boca Raton for obedience, puppy training, and service dog work. Results-focused plans and coaching—schedule a consult today.”
+
+8) https://woofdogs.com/dog-training-loxahatchee
+Field	Value
+Meta Description	Professional dog training in Loxahatchee. Obedience + puppy training + service animal training. Serving nearby areas. Call now to schedule a consult.
+Length / Pixels	149 chars / 913 px
+Indexability	Indexable
+Screaming Frog flags (from data)	None (pixel width is close to common truncation limits).
+
+Reasoning: Good local targeting. Because pixel width is near typical truncation thresholds, tightening a few words reduces the risk of SERP cut-off.
+
+Recommendation:
+“Dog training in Loxahatchee for obedience, puppy training, and service dog work. Structured plans for real-life results—book a consult.”
+
+9) https://woofdogs.com/dog-training-delray-beach
+Field	Value
+Meta Description	Professional dog training in Delray Beach. Obedience + puppy training + service animal training. Serving nearby areas. Call now to schedule a consult.
+Length / Pixels	149 chars / 888 px
+Indexability	Indexable
+Screaming Frog flags (from data)	None.
+
+Reasoning: Strong and clear, but could be more compelling by swapping the “+ + +” format for more human language.
+
+Recommendation:
+“Dog training in Delray Beach for obedience, puppies, and service dog training. Clear guidance and proven structure—schedule your consult.”
+
+10) https://woofdogs.com/dog-training-west-palm-beach
+Field	Value
+Meta Description	Professional dog training in West Palm Beach. Obedience + puppy training + service animal training. Serving nearby areas. Call now to schedule a consult.
+Length / Pixels	153 chars / 913 px
+Indexability	Indexable
+Screaming Frog flags (from data)	None (pixel width near truncation range).
+
+Reasoning: Local targeting is strong. As with Loxahatchee, trimming slightly protects against truncation and makes the snippet read cleaner.
+
+Recommendation:
+“Dog training in West Palm Beach for obedience, puppy training, and service dog work. Structured plans, real-life results—book a consult.”
+
+11) https://woofdogs.com/dog-boarding
+Field	Value
+Meta Description	Premium dog boarding services in Boca Raton and South Florida. Safe, comfortable boarding facilities with 24/7 supervision, experienced staff, and optional board & train upgrades. Professional pet boarding you can trust.
+Length / Pixels	220 chars / 1364 px
+Indexability	Non-Indexable
+Indexability Status	Canonicalised
+Screaming Frog flags (from data)	Too long, pixel truncation risk, and Canonicalised (non-indexable).
+
+Reasoning: This will almost certainly truncate in SERPs. More importantly, Screaming Frog shows it’s canonicalised, meaning Google is being told to index a different canonical URL instead—so this page may not be eligible to rank as-is.
+
+Recommendations:
+
+Technical (based on “Canonicalised”): Decide whether this boarding URL should rank. If yes, update canonicals so the intended indexable version self-canonicals (and avoid conflicting canonicals/redirect chains).
+
+Copy (shorten for SERP):
+“Dog boarding in Boca Raton & South Florida—safe, comfortable stays with attentive care. Optional board & train upgrades available. Reserve now.”
+
+12) https://woofdogs.com/
+Field	Value
+Meta Description	We Speak Your Dog's Language. Professional dog training services in Boca Raton, Delray Beach, Wellington, and Palm Beach Gardens. Expert obedience training, puppy training, behavioral assessment, service dog training, and aggression management.
+Length / Pixels	244 chars / 1550 px
+Indexability	Indexable
+Screaming Frog flags (from data)	Too long and pixel truncation risk.
+
+Reasoning: This is packed with services and locations, but it’s far beyond typical SERP display limits, so most of the value won’t be seen. Prioritize (1) primary service keyword + (2) key cities + (3) one CTA.
+
+Recommendation:
+“Dog training in Boca Raton, Delray Beach & Wellington—obedience, puppy training, behavior help, and service dog training. Book a consult today.”
+
+Most frequent / most critical issues found (based on this report)
+
+Meta descriptions too long / truncation risk
+
+2 URLs are >160 chars and 3 URLs exceed common pixel-width thresholds (notably the homepage and dog boarding). This can reduce CTR because key selling points get cut off.
+
+Local modifiers missing on several service pages
+
+Several core service pages (puppy training, obedience, aggression management, service animal training) don’t include a geographic cue in the meta description, which is a missed opportunity for local-intent searches in South Florida.
+
+Dog Boarding page is Non-Indexable (Canonicalised)
+
+This is the biggest technical blocker in the file. If the dog boarding page is meant to rank, the canonical/indexability configuration needs attention (because Google is being directed elsewhere).

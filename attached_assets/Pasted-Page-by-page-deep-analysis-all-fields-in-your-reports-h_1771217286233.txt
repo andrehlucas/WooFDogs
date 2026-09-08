@@ -1,0 +1,279 @@
+Page-by-page deep analysis (all fields in your reports)
+https://woofdogs.com/
+
+Original fields
+
+H1: “Expert Dog Training in West Palm Beach & Boca Raton”
+
+H2-1: “Shay Maimoni - Expert K9 Specialist”
+
+H2-2: (missing / blank in export)
+
+Meta Description: very long (244 chars / 1550 px)
+
+Meta Keywords: sitewide duplicate list
+
+Indexability: Indexable
+
+Screaming Frog issues (from the data)
+
+Meta description too long → truncation risk
+
+H2-2 missing
+
+Meta keywords duplicate across all pages
+
+Reasoning
+
+Homepage H1 targets only two cities, but the meta description lists four. That’s inconsistent messaging for local + topical relevance.
+
+H2-1 is a person’s name. That can be great for credibility, but it’s not an ideal primary semantic subheading unless the section is explicitly about the trainer.
+
+Recommendations
+
+Meta Description (shorten + clarify local service):
+“Dog training in Boca Raton, West Palm Beach & nearby cities—obedience, puppy training, behavior help, and service dog training. Book a consult.”
+
+H1 (align with actual coverage):
+Option A: “Expert Dog Training in South Florida”
+Option B: “Expert Dog Training in Boca Raton, West Palm Beach & Nearby”
+
+H2: add a missing H2-2 that supports intent (services/results). Example:
+“Obedience, Puppy Training & Behavior Help That Works at Home”
+
+https://woofdogs.com/puppy-training
+
+Original
+
+H1: “Building the Foundation for a Well-Behaved Adult Dog”
+
+H2-1: “Why Puppy Stages Matter”
+
+H2-2: “Puppy Temperament Testing”
+
+Meta Description: 115 chars / 729 px (short)
+
+Indexability: Indexable
+
+Issues
+
+Meta description too short
+
+No local modifier in meta description
+
+Reasoning
+
+The H1 is compelling, but it does not contain “Puppy Training” (you’re relying on the URL for that keyword). That can still work, but when competition is heavy, the on-page heading should carry clearer intent.
+
+Meta description is short and doesn’t anchor South Florida relevance.
+
+Recommendations
+
+H1 (more explicit intent):
+“Puppy Training That Builds a Calm, Well-Behaved Adult Dog”
+
+Meta Description (expand + local):
+“Puppy training in South Florida with age-appropriate structure, socialization guidance, and manners at home. Start with an evaluation—book today.”
+
+https://woofdogs.com/obedience
+
+Original
+
+H1: “Obedience Training that works in the real world”
+
+H2-1: “Personalized Obedience Training for Every Dog”
+
+H2-2: “Book Your Evaluation”
+
+Meta Description: 127 chars / 770 px (OK length, not local)
+
+Indexability: Indexable
+
+Issues
+
+Meta description lacks local modifier
+
+Reasoning
+
+Strong H1: it hits intent (“real world”).
+
+Your meta description is fine length-wise but generic; it could win more clicks by adding city/region + outcomes (“loose leash”, “recall”, etc.).
+
+Recommendations
+
+Meta Description (local + outcomes):
+“Obedience training in South Florida for real-life manners—loose leash walking, recall, and impulse control. Personalized plan—schedule an evaluation.”
+
+https://woofdogs.com/aggression-management
+
+Original
+
+H1: “Expert Aggression Management & Behavior Modification”
+
+H2-1: “Specialized Behavior Modification for Aggressive Dogs”
+
+H2-2: “Start with a Safety Assessment”
+
+Meta Description: 141 chars / 866 px (good length, not local)
+
+Indexability: Indexable
+
+Issues
+
+Meta description lacks local modifier
+
+Reasoning
+
+This is your differentiator category. You’re already using strong “expert” language and safety-first structure.
+
+Adding South Florida relevance in the meta description typically improves local CTR for “aggressive dog trainer near me” type searches.
+
+Recommendations
+
+Meta Description (local + safety-first CTA):
+“Aggression management in South Florida for reactivity and bite-risk behaviors. Safety-first behavior plans and coaching—start with an assessment.”
+
+https://woofdogs.com/behavioral-assessment
+
+Original
+
+H1: “Behavioral Assessment: The Foundation for Lasting Change”
+
+H2-1: “Understanding Your Dog Is Step One”
+
+H2-2: “Schedule Your Assessment”
+
+Meta Description: includes “Serving South Florida.” (127 chars / 797 px)
+
+Indexability: Indexable
+
+Issues
+
+None major from these fields
+
+Reasoning
+
+Great alignment: H1 (foundation), H2 (step one), CTA H2-2, and the meta description includes South Florida.
+
+This is one of the best “semantic stacks” in the set.
+
+Recommendations
+
+Keep structure; small CTR optimization only:
+“Behavioral assessment in South Florida for aggression, reactivity, and anxiety. Get a clear plan—schedule your assessment.”
+
+City pages (Boca Raton / Wellington / West Palm Beach / Delray Beach / Loxahatchee)
+
+These are structurally consistent in your exports:
+
+Example: https://woofdogs.com/dog-training-boca-raton
+
+H1: “Dog Training in Boca Raton” ✅
+
+H2-1: “Training Programs in Boca Raton” ✅ (supports relevance)
+
+H2-2: “What Makes WooF Dogs Different” (repeated across 5 city pages)
+
+Meta Description: local + services list + CTA, ~148–153 chars, ~888–913 px (close to truncation threshold but generally okay)
+
+Indexability: Indexable
+
+Screaming Frog issues (pattern-level)
+
+H2-2 “What Makes WooF Dogs Different” appears on 5 pages (not inherently “bad”, but it’s generic and not city-specific).
+
+Meta descriptions are close to pixel limits; a few are around ~913 px (riskier).
+
+Reasoning
+
+The H1 strategy for local pages is correct and consistent.
+
+The main optimization opportunity is making the H2-2 and meta description more city-specific so these pages don’t feel templated.
+
+Recommendations (apply to all city pages)
+
+H2-2 (make it location-tied):
+“Why Dog Owners in [City] Choose WooF Dogs”
+
+Meta Description (remove the “+ + +” feel + protect truncation):
+“Dog training in [City] for obedience, puppies, and behavior help. Structured plans with clear results—book a consult today.”
+
+https://woofdogs.com/service-animal-training
+
+Original
+
+H1: “Professional Service Animal Training”
+
+H2-1: “Specialized Service Animal Training”
+
+H2-2: “Start Your Journey”
+
+Meta Description: 119 chars / 710 px (short)
+
+Indexability: Indexable
+
+Issues
+
+Meta description too short
+
+No local modifier
+
+Reasoning
+
+H1/H2 are clear but slightly repetitive (H1 and H2-1 echo each other).
+
+The meta description needs more specificity for intent and location.
+
+Recommendations
+
+H2-1 (reduce repetition, add intent):
+“Task Training, Public Access Skills & Handler Coaching”
+
+Meta Description (expand + local):
+“Service dog training in South Florida focused on task work, public-access skills, and handler coaching. Start with an assessment—book today.”
+
+https://woofdogs.com/dog-boarding
+
+Original
+
+H1: “Resort-Style Luxury Boarding”
+
+H2-1: “Premier Boarding Facilities — A Home Away From Home”
+
+H2-2: “Dog Boarding Accommodations & Pricing”
+
+Meta Description: 220 chars / 1364 px (too long)
+
+Indexability: Non-Indexable
+
+Indexability Status: Canonicalised
+
+Issues
+
+Meta description will truncate heavily
+
+Canonicalised = not indexable (critical)
+
+Reasoning
+
+The “resort-style” angle is strong branding, but it doesn’t say “dog boarding” in the H1 (it’s implied).
+
+The canonicalization issue is the real blocker: if this page isn’t indexable, on-page improvements won’t matter for ranking.
+
+Recommendations
+
+Technical (based on SF data): confirm whether this URL should rank. If yes, ensure the canonical setup makes the intended version indexable.
+
+H1 (include core term):
+“Resort-Style Dog Boarding in South Florida”
+
+Meta Description (shorten + keep selling points):
+“Dog boarding in Boca Raton & South Florida—safe, comfortable stays with attentive care. Optional board & train upgrades. Reserve now.”
+
+The 2–3 highest-impact actions from these reports
+
+Fix Dog Boarding indexability (Canonicalised) if you want it to rank.
+
+Rewrite the homepage meta description (it’s massively over limit and truncating).
+
+Upgrade service-page meta descriptions (puppy training + service animal training are too short and not locally grounded).

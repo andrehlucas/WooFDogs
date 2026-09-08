@@ -1,0 +1,216 @@
+{
+  "page": {
+    "title": "Obedience Training — Woof Dogs",
+    "slug": "obedience-training",
+    "sections": [
+      {
+        "id": "hero",
+        "headline": "Obedience Training that works in the real world",
+        "subheadline": "From basics to advanced off-leash reliability — every program starts with a professional evaluation.",
+        "locationTag": "Boca Raton • Science-based & Balanced",
+        "primaryCta": {
+          "label": "Book Evaluation",
+          "href": "#book"
+        },
+        "secondaryCta": {
+          "label": "Compare Levels",
+          "href": "#program-levels"
+        },
+        "image": {
+          "src": "/images/obedience-hero.jpg",
+          "alt": "Dog training outdoors with professional trainer"
+        }
+      },
+      {
+        "id": "trust",
+        "title": "Why Choose Us",
+        "badges": [
+          {
+            "label": "25+ Years",
+            "description": "Pro training experience"
+          },
+          {
+            "label": "1,000+ Dogs",
+            "description": "Happy graduates"
+          },
+          {
+            "label": "Balanced",
+            "description": "Evidence-based methods"
+          },
+          {
+            "label": "Family-Ready",
+            "description": "Kid & home friendly"
+          }
+        ]
+      },
+      {
+        "id": "program-levels",
+        "label": "Programs",
+        "title": "Obedience Levels",
+        "subtitle": "Choose the right level for your dog. Not sure? Start with an evaluation.",
+        "levels": [
+          {
+            "icon": "ClipboardList",
+            "title": "Basic Obedience",
+            "description": "Sit, down, stay, leash manners, place, and recall foundation.",
+            "meta": "Great for puppies & first-time learners",
+            "cta": {
+              "label": "Book Evaluation",
+              "href": "#book"
+            }
+          },
+          {
+            "icon": "Star",
+            "title": "Advanced Obedience",
+            "description": "Distraction proofing, duration/distance, and public manners.",
+            "meta": "For dogs with basics that need reliability",
+            "cta": {
+              "label": "Book Evaluation",
+              "href": "#book"
+            }
+          },
+          {
+            "icon": "Target",
+            "title": "Off-Leash Reliability",
+            "description": "Solid recall & control with freedom in real-world settings.",
+            "meta": "For advanced teams ready for freedom",
+            "cta": {
+              "label": "Book Evaluation",
+              "href": "#book"
+            }
+          }
+        ]
+      },
+      {
+        "id": "how-it-works",
+        "label": "Process",
+        "title": "How It Works",
+        "steps": [
+          {
+            "icon": "ClipboardList",
+            "title": "1) Evaluation",
+            "description": "Professional behavioral assessment to map goals and challenges."
+          },
+          {
+            "icon": "FileText",
+            "title": "2) Custom Plan",
+            "description": "Level selection, sessions, homework, and milestones tailored to your dog."
+          },
+          {
+            "icon": "RotateCcw",
+            "title": "3) Reinforcement",
+            "description": "Owner coaching, follow-ups, and real-world proofing to ensure lasting results."
+          }
+        ]
+      },
+      {
+        "id": "results",
+        "label": "Results",
+        "title": "Real Transformations",
+        "description": "Before & after success stories from our graduates.",
+        "examples": [
+          {
+            "title": "From Pulling to Polite Walking",
+            "subtitle": "Leash control achieved in 4 weeks",
+            "image": "/images/results-leash.jpg"
+          },
+          {
+            "title": "Reliable Recall",
+            "subtitle": "Off-leash freedom with full control",
+            "image": "/images/results-recall.jpg"
+          },
+          {
+            "title": "Calmer at Home",
+            "subtitle": "No more jumping or counter-surfing",
+            "image": "/images/results-calm.jpg"
+          }
+        ]
+      },
+      {
+        "id": "testimonials",
+        "label": "Testimonials",
+        "title": "Happy walks. Calm homes.",
+        "description": "Hear from families who completed our obedience programs.",
+        "quotes": [
+          {
+            "quote": "We started with leash-pulling chaos. After training, walks are calm and enjoyable — it’s night and day!",
+            "author": "Sarah Mitchell",
+            "dog": "Luna, Golden Retriever"
+          },
+          {
+            "quote": "Our trainer customized every session for our anxious dog. Now she’s confident and obedient even in public.",
+            "author": "Michael Chen",
+            "dog": "Bella, Shepherd Mix"
+          },
+          {
+            "quote": "Best decision we made for our family — consistent results and so much clearer communication with our dog.",
+            "author": "Jessica Rodriguez",
+            "dog": "Max, Labrador"
+          }
+        ]
+      },
+      {
+        "id": "book",
+        "label": "Book Evaluation",
+        "title": "Book Your Evaluation",
+        "description": "Tell us about your dog and preferred times. We’ll confirm within 24 hours.",
+        "formFields": [
+          {
+            "id": "first-name",
+            "label": "First Name",
+            "type": "text",
+            "placeholder": "Enter your first name"
+          },
+          {
+            "id": "last-name",
+            "label": "Last Name",
+            "type": "text",
+            "placeholder": "Enter your last name"
+          },
+          {
+            "id": "email",
+            "label": "Email",
+            "type": "email",
+            "placeholder": "Enter your email address"
+          },
+          {
+            "id": "phone",
+            "label": "Phone",
+            "type": "tel",
+            "placeholder": "(555) 123-4567"
+          },
+          {
+            "id": "dog-info",
+            "label": "Tell us about your dog",
+            "type": "textarea",
+            "placeholder": "Dog's name, breed, age, and what you'd like help with..."
+          }
+        ],
+        "submitButton": {
+          "label": "Schedule Evaluation"
+        }
+      },
+      {
+        "id": "footer",
+        "about": {
+          "logo": "/woof-dogs-logo.svg",
+          "description": "Building better relationships between dogs and their families through professional, positive training."
+        },
+        "links": {
+          "services": [
+            "Basic Obedience",
+            "Advanced Obedience",
+            "Off-Leash Reliability",
+            "Evaluation",
+            "Owner Guides",
+            "FAQ"
+          ],
+          "company": ["About Us", "Our Trainers", "Testimonials", "Contact"],
+          "resources": ["Blog", "PDF Guides", "FAQ"],
+          "legal": ["Privacy Policy", "Terms of Service"]
+        },
+        "social": ["Instagram", "Facebook"]
+      }
+    ]
+  }
+}
